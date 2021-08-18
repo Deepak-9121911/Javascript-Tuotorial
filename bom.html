@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>The Browser Object Model</title>
+    <link rel="icon" href="images/jscript.ico" />
+  </head>
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400&display=swap"
+    rel="stylesheet"
+  />
+  <!-- Font Awesome CDN -->
+  <script
+    src="https://kit.fontawesome.com/c0221349e7.js"
+    crossorigin="anonymous"
+  ></script>
+  <!-- custom stylesheet -->
+  <link rel="stylesheet" href="./css/bom.css" />
+
+  <body>
+    <nav class="nav-bar">
+      <ul class="nav-links">
+        <li>
+          <a href="./index.html"><i class="fas fa-home"></i>Home</a>
+        </li>
+        <li>
+          <a href="about.html"><i class="fas fa-address-card"></i>About</a>
+        </li>
+        <li>
+          <a href="https://codepen.io/pen/" target="_blank"
+            ><i class="fab fa-codepen"></i>Codepen</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <div class="wrapper">
+      <div class="sidebar">
+        <h3>The Browser Object Model</h3>
+        <ul>
+          <li>
+            <a href="#intro">Introduction</a>
+          </li>
+          <li>
+            <a href="#object"> The Window Object</a>
+          </li>
+          <li>
+            <a href="#size">Window Size</a>
+          </li>
+          <li>
+            <a href="#history">Window History</a>
+          </li>
+          <li>
+            <a href="#navigator">Window Navigator</a>
+          </li>
+          <li>
+            <a href="#timing_events">JavaScript Timing Events</a>
+          </li>
+          <li>
+            <a href="#cookies">Cookies</a>
+          </li>
+          <li>
+            <a href="#js-cookies">Working on Cookies using JavaScript</a>
+          </li>
+          <li>
+            <a href="./bom-quiz.html">Browser Object Model Quiz</a>
+          </li>
+          <li>
+            <a href="./assignments.html#bom-assignment">Assignments</a>
+          </li>
+        </ul>
+      </div>
+      <div class="main_content">
+        <div class="header">
+          <h2 id="intro">Introduction</h2>
+          <p>
+            The Browser Object Model (BOM) in JavaScript includes the properties
+            and methods for JavaScript to interact with the web browser.
+          </p>
+          <p>
+            Since all modern browsers have implemented (almost) the same methods
+            and properties for JavaScript interactivity, it is often referred to
+            as methods and properties of the BOM.
+          </p>
+        </div>
+        <div class="info">
+          <div id="object">
+            <h2>Window Object</h2>
+            <p>
+              The window object represents a window in the browser. An object of
+              the window is created automatically by the browser.
+            </p>
+            <p>
+              Window is the object of the browser, it is not the object of
+              javascript. The javascript objects are string, array, date etc
+            </p>
+            <h3>Methods of window object</h3>
+            <p>The important methods of window object are as follows:</p>
+            <table>
+              <tr>
+                <td><b>Method</b></td>
+                <td><b>Description</b></td>
+              </tr>
+              <tr>
+                <td><span class="monospace">alert()</span></td>
+                <td>
+                  displays the alert box containing a message with the ok
+                  button.
+                </td>
+              </tr>
+              <tr>
+                <td><span class="monospace">confirm()</span></td>
+                <td>
+                  displays the confirm dialog box containing a message with ok
+                  and cancel buttons.
+                </td>
+              </tr>
+              <tr>
+                <td><span class="monospace">prompt()</span></td>
+                <td>displays a dialog box to get input from the user.</td>
+              </tr>
+              <tr>
+                <td><span class="monospace">open()</span></td>
+                <td>opens the new window.</td>
+              </tr>
+              <tr>
+                <td><span class="monospace">close()</span></td>
+                <td>closes the current window.</td>
+              </tr>
+              <tr>
+                <td><span class="monospace">setTimeout()</span></td>
+                <td>
+                  performs action after specified time like calling function,
+                  evaluating expressions etc.
+                </td>
+              </tr>
+            </table>
+            <div class="examples">
+              <h3>Example:</h3>
+              <p><span class="monospace">confirm()</span> in JavaScript:</p>
+              <p>
+                It displays the confirm dialog box. It has a message with ok and
+                cancel buttons.
+              </p>
+              <div class="code">
+                &lt;script type="text/javascript"> &nbsp;function msg(){ <br />
+                &nbsp;&nbsp;var v= confirm("Are u sure?"); <br />
+                &nbsp;&nbsp;if(v==true){ <br />
+                &nbsp;&nbsp;&nbsp;alert("ok"); <br />
+                &nbsp;&nbsp;} <br />
+                &nbsp;&nbsp;else{ <br />
+                &nbsp;&nbsp;&nbsp;alert("cancel"); <br />
+                &nbsp;&nbsp;} <br />
+                &nbsp;} <br />
+                &lt;/script> <br />
+                &lt;button onclick="msg()">Delete Records&lt;/button>
+              </div>
+              <button onclick="msg()">Delete Records</button>
+            </div>
+          </div>
+          <div id="size">
+            <h2>Window Size</h2>
+            <p>
+              Two properties can be used to determine the size of the browser
+              window. Both properties return the sizes in pixels:
+            </p>
+            <ul>
+              <li>
+                <span class="monospace">window.innerHeight</span> - the inner
+                height of the browser window (in pixels)
+              </li>
+              <li>
+                <span class="monospace">window.innerWidth</span> - the inner
+                width of the browser window (in pixels)
+              </li>
+            </ul>
+            <div class="examples">
+              <h3>Example:</h3>
+              <p>
+                JavaScript to determine browser height and width of the browser
+                window:
+              </p>
+              <div class="code">
+                &lt;script><br />
+                &nbsp;document.write("Screen height: " + window.innerHeight);<br />
+                &nbsp;document.write("Screen width: " + window.innerWidth);<br />
+                &lt;/script>
+              </div>
+              <script>
+                document.write("Screen height: " + window.innerHeight);
+                document.write("<br>Screen width: " + window.innerWidth);
+              </script>
+            </div>
+          </div>
+          <div id="history">
+            <h2>Window History</h2>
+            <p>
+              The <span class="monospace">window.history</span> object can be
+              written without the window prefix.
+            </p>
+            <p>
+              To protect the privacy of the users, there are limitations to how
+              JavaScript can access this object.
+            </p>
+            <h3>Methods of JavaScript history object</h3>
+            <p>There are only 3 methods of history objects:</p>
+            <table>
+              <tr>
+                <td><b>Method</b></td>
+                <td><b>Description</b></td>
+              </tr>
+              <tr>
+                <td><span class="monospace">forward()</span></td>
+                <td>Loads the next page</td>
+              </tr>
+              <tr>
+                <td><span class="monospace">back()</span></td>
+                <td>Loads the previous page</td>
+              </tr>
+              <tr>
+                <td><span class="monospace">go()</span></td>
+                <td>Loads the given page number</td>
+              </tr>
+            </table>
+            <div class="examples">
+              <h3>Example:</h3>
+              <div class="code">
+                &lt;input type="button" value="Go Back" onclick="goBack()" />
+                <br />
+                &lt;script> <br />
+                &nbsp;function goBack() { <br />
+                &nbsp;&nbsp;window.history.back()<br />
+                &nbsp;}<br />
+                &lt;/script><br />
+              </div>
+              <input
+                class="button"
+                type="button"
+                value="Go Back"
+                onclick="goBack()"
+              />
+              <div class="code">
+                &lt;input type="button" value="Go Forward" onclick="goForward()"
+                />
+                <br />
+                &lt;script> <br />
+                &nbsp; function goForward() { <br />
+                &nbsp;&nbsp;window.history.forward()<br />
+                &nbsp;}<br />
+                &lt;/script><br />
+              </div>
+              <input
+                class="button"
+                type="button"
+                value="Go Forward"
+                onclick="goForward()"
+              />
+            </div>
+          </div>
+          <div id="navigator">
+            <h2>JavaScript Navigator Object</h2>
+            <p>
+              The JavaScript navigator object is used for browser detection. It
+              can be used to get browser information such as appName,
+              appCodeName, userAgent etc. The
+              <span class="monospace">window.navigator</span> object can be
+              written without the window prefix.
+            </p>
+            <p>Some examples:</p>
+            <ul>
+              <li>
+                <span class="monospace">navigator.appName</span>
+              </li>
+              <li>
+                <span class="monospace">navigator.appCodeName</span>
+              </li>
+              <li>
+                <span class="monospace">navigator.platform</span>
+              </li>
+            </ul>
+            <h3>Property of JavaScript navigator object</h3>
+            <p>
+              There are many properties of the navigator object that returns
+              information about the browser.
+            </p>
+            <table>
+              <tr>
+                <td>
+                  <b>Property</b>
+                </td>
+                <td>
+                  <b>Description</b>
+                </td>
+              </tr>
+              <tr>
+                <td><span class="monospace">appName</span></td>
+                <td>returns the name</td>
+              </tr>
+              <tr>
+                <td><span class="monospace">appVersion</span></td>
+
+                <td>returns the version</td>
+              </tr>
+              <tr>
+                <td><span class="monospace">appCodeName</span></td>
+
+                <td>returns the code name</td>
+              </tr>
+              <tr>
+                <td><span class="monospace">cookieEnabled</span></td>
+                <td>returns true if cookie is enabled otherwise false</td>
+              </tr>
+              <tr>
+                <td><span class="monospace">userAgent</span></td>
+                <td>returns the user agent</td>
+              </tr>
+              <tr>
+                <td><span class="monospace">language</span></td>
+                <td>
+                  returns the language. It is supported in Netscape and Firefox
+                  only.
+                </td>
+              </tr>
+              <tr>
+                <td><span class="monospace">userLanguage</span></td>
+                <td>returns the user language. It is supported in IE only.</td>
+              </tr>
+              <tr>
+                <td><span class="monospace">plugins</span></td>
+                <td>
+                  returns the plugins. It is supported in Netscape and Firefox
+                  only.
+                </td>
+              </tr>
+              <tr>
+                <td><span class="monospace">systemLanguage</span></td>
+                <td>
+                  returns the system language. It is supported in IE only.
+                </td>
+              </tr>
+              <tr>
+                <td><span class="monospace">mimeTypes[]</span></td>
+                <td>
+                  returns the array of mime type. It is supported in Netscape
+                  and Firefox only.
+                </td>
+              </tr>
+              <tr>
+                <td><span class="monospace">platform</span></td>
+                <td>returns the platform e.g. Win32.</td>
+              </tr>
+              <tr>
+                <td><span class="monospace">online</span></td>
+                <td>returns true if the browser is online otherwise false.</td>
+              </tr>
+            </table>
+            <div class="examples">
+              <h3>Example:</h3>
+              <div class="code">
+                document.writeln( "navigator.appCodeName: " +
+                navigator.appCodeName );<br />
+                document.writeln("navigator.appName: " + navigator.appName);<br />
+                document.writeln( "navigator.appVersion: " +
+                navigator.appVersion );<br />
+                document.writeln( "navigator.cookieEnabled: " +
+                navigator.cookieEnabled );<br />
+                document.writeln( "navigator.language: " + navigator.language
+                );<br />
+                document.writeln( "navigator.userAgent: " + navigator.userAgent
+                );<br />
+                document.writeln( "navigator.platform: " + navigator.platform
+                );<br />
+                document.writeln("navigator.onLine: " + navigator.onLine);
+              </div>
+              <h3>Output:</h3>
+              <script>
+                document.writeln(
+                  "navigator.appCodeName: " + navigator.appCodeName
+                );
+                document.writeln(
+                  "<br/>navigator.appName: " + navigator.appName
+                );
+                document.writeln(
+                  "<br/>navigator.appVersion: " + navigator.appVersion
+                );
+                document.writeln(
+                  "<br/>navigator.cookieEnabled: " + navigator.cookieEnabled
+                );
+                document.writeln(
+                  "<br/>navigator.language: " + navigator.language
+                );
+                document.writeln(
+                  "<br/>navigator.userAgent: " + navigator.userAgent
+                );
+                document.writeln(
+                  "<br/>navigator.platform: " + navigator.platform
+                );
+                document.writeln("<br/>navigator.onLine: " + navigator.onLine);
+              </script>
+            </div>
+          </div>
+          <div id="timing_events">
+            <h2>JavaScript Timing Events</h2>
+            <h3>Timing Events</h3>
+            <p>
+              The window object allows execution of code at specified time
+              intervals. These time intervals are called timing events.
+            </p>
+            <p>The two key methods to use with JavaScript are:</p>
+            <ul>
+              <li>
+                <span class="monospace"
+                  >setTimeout(function, milliseconds)</span
+                >
+                - Executes a function, after waiting a specified number of
+                milliseconds.
+              </li>
+              <li>
+                <span class="monospace"
+                  >setInterval(function, milliseconds)</span
+                >
+                - Same as setTimeout(), but repeats the execution of the
+                function continuously.
+              </li>
+            </ul>
+            <h3>The setTimeout() Method</h3>
+            <span class="monospace"
+              >window.setTimeout(function, milliseconds);</span
+            >
+            <p>
+              The <span class="monospace">window.setTimeout()</span> method can
+              be written without the window prefix.
+            </p>
+            <p>
+              The first parameter is a function to be executed. The second
+              parameter indicates the number of milliseconds before execution.
+            </p>
+            <div class="examples">
+              <h3>Example:</h3>
+              <p>
+                Click a button. Wait 2 seconds, and the page will alert "Hello":
+              </p>
+              <div class="code">
+                &lt;button onclick="setTimeout(timeoutFunc, 2000)">Try
+                it&lt;/button> <br />
+                &lt;script> function timeoutFunc() { <br />
+                &nbsp;alert('Hello'); } <br />
+                &lt;/script>
+              </div>
+              <button class="button" onclick="setTimeout(timeoutFunc, 2000)">
+                Click Here
+              </button>
+            </div>
+            <h3>
+              How to Stop the Execution of
+              <span class="monospace">setTimeout()</span>?
+            </h3>
+            <p>
+              The <span class="monospace">clearTimeout()</span> method stops the
+              execution of the function specified in
+              <span class="monospace">setTimeout()</span>.
+            </p>
+            <span class="monospace">window.clearTimeout(timeoutVariable)</span>
+            <p>
+              The <span class="monospace">window.clearTimeout()</span> method
+              can be written without the window prefix.
+            </p>
+            <p>
+              The <span class="monospace">clearTimeout()</span> method uses the
+              variable returned from
+              <span class="monospace">setTimeout()</span>:
+            </p>
+            <span class="monospace"
+              >myVar = setTimeout(function, milliseconds);</span
+            >
+            <br />
+            <span class="monospace">clearTimeout(myVar);</span>
+            <p>
+              If the function has not already been executed, you can stop the
+              execution by calling the
+              <span class="monospace">clearTimeout()</span> method:
+            </p>
+            <div class="examples">
+              <h3>Example:</h3>
+              <p>Same example as above, but with an added "Stop" button:</p>
+              <div class="code">
+                &lt;button onclick="myVar = setTimeout(timeoutFunc, 2000)">Try
+                it&lt;/button><br />
+                &lt;button onclick="clearTimeout(myVar)">Stop it&lt;/button>
+              </div>
+              <button
+                class="button"
+                onclick="myVar = setTimeout(timeoutFunc, 2000)"
+              >
+                Click Here
+              </button>
+              <button class="button" onclick="clearTimeout(myVar)">
+                Stop it
+              </button>
+            </div>
+          </div>
+          <div id="cookies">
+            <h2>JavaScript Cookies</h2>
+            <h3>What are Cookies?</h3>
+            <p>
+              Cookies are data, stored in small text files, on your computer.
+              When a web server has sent a web page to a browser, the connection
+              is shut down, and the server forgets everything about the user.
+              Cookies were invented to solve the problem "how to remember
+              information about the user":
+            </p>
+            <ul>
+              <li>
+                When a user visits a web page, his/her name can be stored in a
+                cookie.
+              </li>
+              <li>
+                Next time the user visits the page, the cookie "remembers"
+                his/her name.
+              </li>
+            </ul>
+
+            <p>Cookies are saved in name-value pairs like:</p>
+            <p>username = John Doe</p>
+            <p>
+              When a browser requests a web page from a server, cookies
+              belonging to the page are added to the request. This way the
+              server gets the necessary data to "remember" information about
+              users.<br />None of the examples below will work if your browser
+              has local cookies support turned off.
+            </p>
+            <h3>How Cookies Works?</h3>
+            <p>
+              When a user sends a request to the server, then each of that
+              request is treated as a new request sent by the different user.
+            </p>
+            <p>
+              So, to recognize the old user, we need to add the cookie with the
+              response from the server.
+            </p>
+            <p>
+              Now, whenever a user sends a request to the server, the cookie is
+              added with that request automatically. Due to the cookie, the
+              server recognizes the users.
+            </p>
+          </div>
+          <div id="js-cookies">
+            <h2>Working on Cookies using JavaScript</h2>
+            <p>
+              JavaScript provides some optional attributes that enhance the
+              functionality of cookies. Here, is the list of some attributes
+              with their description.
+            </p>
+            <table>
+              <tr>
+                <td><b>Attributes</b></td>
+                <td><b>Description</b></td>
+              </tr>
+              <tr>
+                <td>expires</td>
+                <td>
+                  It maintains the state of a cookie up to the specified date
+                  and time.
+                </td>
+              </tr>
+              <tr>
+                <td>max-age</td>
+                <td>
+                  It maintains the state of a cookie up to the specified time.
+                  Here, time is given in seconds.
+                </td>
+              </tr>
+              <tr>
+                <td>path</td>
+                <td>
+                  It expands the scope of the cookie to all the pages of a
+                  website.
+                </td>
+              </tr>
+              <tr>
+                <td>domain</td>
+                <td>
+                  It is used to specify the domain for which the cookie is
+                  valid.
+                </td>
+              </tr>
+            </table>
+            <h3>Create a Cookie with JavaScript</h3>
+            <p>
+              JavaScript can create, read, and delete cookies with the
+              <span class="monospace">document.cookie</span> property.
+            </p>
+            <p>With JavaScript, a cookie can be created like this:</p>
+            <span class="monospace"
+              >document.cookie = "username=John Doe";</span
+            >
+            <p>
+              You can also add an expiry date (in UTC time). By default, the
+              cookie is deleted when the browser is closed:
+            </p>
+            <span class="monospace"
+              >document.cookie = "username=John Doe; expires=Thu, 18 Dec 2013
+              12:00:00 UTC";</span
+            >
+            <p>
+              With a path parameter, you can tell the browser what path the
+              cookie belongs to. By default, the cookie belongs to the current
+              page.
+            </p>
+            <span class="monospace"
+              >document.cookie = "username=John Doe; expires=Thu, 18 Dec 2013
+              12:00:00 UTC; path=/";</span
+            >
+            <h3>Read a Cookie with JavaScript</h3>
+            <p>With JavaScript, cookies can be read like this:</p>
+            <span class="monospace">var x = document.cookie;</span>
+            <p>
+              document.cookie will return all cookies in one string much like:
+              cookie1=value; cookie2=value; cookie3=value;
+            </p>
+            <h3>Change a Cookie with JavaScript</h3>
+            <p>
+              With JavaScript, you can change a cookie the same way as you
+              create it:
+            </p>
+            <span class="monospace"
+              >document.cookie = "username=John Smith; expires=Thu, 18 Dec 2013
+              12:00:00 UTC; path=/";</span
+            >
+            <p>The old cookie is overwritten.</p>
+            <h3>Delete a Cookie with JavaScript</h3>
+            <p>
+              Deleting a cookie is very simple. You don't have to specify a
+              cookie value when you delete a cookie.
+            </p>
+            <p>Just set the expires parameter to a passed date:</p>
+            <span class="monospace"
+              >document.cookie = "username=; expires=Thu, 01 Jan 1970 00:00:00
+              UTC; path=/;";</span
+            >
+            <p>
+              You should define the cookie path to ensure that you delete the
+              right cookie. Some browsers will not let you delete a cookie if
+              you don't specify the path.
+            </p>
+            <h3>The Cookie String</h3>
+            <p>
+              The <span class="monospace">document.cookie</span> property looks
+              like a normal text string. But it is not. Even if you write a
+              whole cookie string to document.cookie, when you read it out
+              again, you can only see the name-value pair of it. If you set a
+              new cookie, older cookies are not overwritten.
+            </p>
+            <p>
+              The new cookie is added to document.cookie, so if you read
+              document.cookie again you will get something like:
+            </p>
+            <span class="monospace">cookie1 = value; cookie2 = value;</span>
+
+            <p>
+              If you want to find the value of one specified cookie, you must
+              write a JavaScript function that searches for the cookie value in
+              the cookie string.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./js/js.js"></script>
+  </body>
+</html>

@@ -1,0 +1,2637 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Introduction to JavaScript</title>
+    <link rel="icon" href="images/jscript.ico" />
+  </head>
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400&display=swap"
+    rel="stylesheet"
+  />
+  <!-- Font Awesome CDN -->
+  <script
+    src="https://kit.fontawesome.com/c0221349e7.js"
+    crossorigin="anonymous"
+  ></script>
+  <!-- custom stylesheet -->
+  <link rel="stylesheet" href="./css/js.css" />
+  <body>
+    <nav class="nav-bar">
+      <ul class="nav-links">
+        <li>
+          <a href="./index.html"><i class="fas fa-home"></i>Home</a>
+        </li>
+        <li>
+          <a href="./about.html"><i class="fas fa-address-card"></i>About</a>
+        </li>
+        <li>
+          <a href="https://codepen.io/pen/" target="_blank"
+            ><i class="fab fa-codepen"></i>Codepen</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <div class="wrapper">
+      <div class="sidebar">
+        <h3>Introduction to JavaScript</h3>
+        <ul>
+          <li>
+            <a href="#intro">What is Javascript</a>
+          </li>
+          <li>
+            <a href="#learnjs">Why to learn JavaScript</a>
+          </li>
+          <li>
+            <a href="#applications">Applications of JavaScript Programming</a>
+          </li>
+          <li>
+            <a href="#syntax">Syntax</a>
+          </li>
+          <li>
+            <a href="#statements_comments">Statements and Comments</a>
+          </li>
+          <li>
+            <a href="#variables_operators">Variables and Operators</a>
+          </li>
+          <li>
+            <a href="#forms">Forms</a>
+          </li>
+          <li>
+            <a href="#functions">Functions</a>
+          </li>
+          <li>
+            <a href="#objects_Events">Objects and Events</a>
+          </li>
+          <li>
+            <a href="#S_N_A">Strings, Numbers, Arrays</a>
+          </li>
+          <li>
+            <a href="#D_M_R">Date, Math, Random</a>
+          </li>
+          <li>
+            <a href="#Loops">Loops</a>
+          </li>
+          <li>
+            <a href="#RegExp">RegExp</a>
+          </li>
+          <li>
+            <a href="./js-quiz.html">JavaScript Quiz</a>
+          </li>
+          <li>
+            <a href="./assignments.html#js-assignment">Assignments</a>
+          </li>
+        </ul>
+      </div>
+      <div class="main_content">
+        <div id="intro" class="header">
+          <h2>INTRODUCTION</h2>
+          <p>
+            JavaScript is a lightweight, interpreted programming language. It is
+            designed for creating network-centric applications. It is
+            complementary to and integrated with Java. JavaScript is very easy
+            to implement because it is integrated with HTML. It is open and
+            cross-platform.
+          </p>
+        </div>
+        <div class="info">
+          <div id="learnjs">
+            <h2>Why to learn JavaScript</h2>
+            <ul>
+              <li>
+                Javascript is the most popular programming language in the world
+                and that makes it a programmer’s great choice. Once you learn
+                Javascript, it helps you develop great front-end as well as
+                back-end softwares using different Javascript based frameworks
+                like jQuery, NodeJS etc.
+              </li>
+              <li>
+                Javascript helps you create really beautiful and crazy fast
+                websites. You can develop your website with a console like look
+                and feel and give your users the best Graphical User Experience.
+              </li>
+              <li>
+                Great thing about Javascript is that you will find tons of
+                frameworks and Libraries already developed which can be used
+                directly in your software development to reduce your time to
+                market.
+              </li>
+            </ul>
+          </div>
+          <div id="applications">
+            <h2>Applications of JavaScript Programming</h2>
+            <ul>
+              <li>
+                <span class="bold">Client side validation - </span>
+                This is really important to verify any user input before
+                submitting it to the server and Javascript plays an important
+                role in validating those inputs at the front-end itself.
+              </li>
+              <li>
+                <span class="bold">Manipulating HTML Pages - </span>
+                Javascript helps in manipulating HTML pages on the fly. This
+                helps in adding and deleting any HTML tag very easily using
+                javascript and modifying your HTML to change its look and feel
+                based on different devices and requirements.
+              </li>
+              <li>
+                <span class="bold">User Notifications - </span>
+                You can use Javascript to raise dynamic pop-ups on the webpages
+                to give different types of notifications to your website
+                visitors.
+              </li>
+              <li>
+                <span class="bold">Back-end Data Loading - </span>
+                Javascript provides Ajax library which helps in loading back-end
+                data while you are doing some other processing. This really
+                gives an amazing experience to your website visitors.
+              </li>
+              <li>
+                <span class="bold">Presentations - </span>
+                JavaScript also provides the facility of creating presentations
+                which gives the website look and feel. JavaScript provides
+                RevealJS and BespokeJS libraries to build web-based slide
+                presentations.
+              </li>
+            </ul>
+          </div>
+          <div id="syntax">
+            <h2>Syntax</h2>
+            JavaScript can be implemented using JavaScript statements that are
+            placed within the
+            <span class="monospace"> &lt;script&gt;... &lt;/script&gt; </span>
+            HTML tags in a web page.
+            <div class="examples">
+              <h3>Example:</h3>
+              <div class="code">
+                &lt;html&gt;<br />
+                &lt;body&gt;<br />
+                &lt;script language = "javascript" type =
+                "text/javascript"&gt;<br />
+                &nbsp; document.write("Hello World!")<br />
+                &lt;/script&gt;<br />
+                &lt;/body&gt;<br />
+                &lt;/html&gt;<br />
+              </div>
+            </div>
+            This prints out <span class="monospace">Hello World</span> in the
+            web page
+
+            <h3>Whitespace and Line Breaks</h3>
+            <p>
+              JavaScript ignores spaces, tabs, and newlines that appear in
+              JavaScript programs. You can use spaces, tabs, and newlines freely
+              in your program and you are free to format and indent your
+              programs in a neat and consistent way that makes the code easy to
+              read and understand.
+            </p>
+            <h3>Semicolons are Optional</h3>
+            <p>
+              Simple statements in JavaScript are generally followed by a
+              semicolon character, just as they are in C, C++, and Java.
+              JavaScript, however, allows you to omit this semicolon if each of
+              your statements are placed on a separate line.
+            </p>
+          </div>
+          <div id="statements_comments">
+            <h2>JavaScript Statements</h2>
+            <p>
+              Javascript statements are composed of values, operators,
+              expressions, keywords and comments.
+            </p>
+            This statement tells the browser to write "Hello Web Development."
+            inside an HTML element with
+            <span class="monospace">id="demo"</span>:
+            <div class="examples">
+              <h3>Example:</h3>
+              <br />
+              <span class="code">
+                document.getElementById("demo").innerHTML = "Hello Web
+                Development.";</span
+              >
+            </div>
+            <p>
+              The statements are executed, one by one, in the same order as they
+              are written.
+            </p>
+            <h2>JavaScript Comments</h2>
+            <p>
+              JavaScript supports both C-style and C++-style comments, Thus any
+              text between a <span class="monospace">//</span> and the end of a
+              line is treated as a comment and is ignored by JavaScript and any
+              text between the characters
+              <span class="monospace">/* */</span> is also treated as a comment.
+              This may span multiple lines.
+            </p>
+            <div class="examples">
+              <h3>Example:</h3>
+              <br />
+              <p>
+                The following example shows how to use comments in JavaScript.
+              </p>
+              <div class="code">
+                &lt; script language = "javascript" type = "text/javascript"&gt;
+                <br />
+                &nbsp;&nbsp;// This is a single line comment in JavaScript
+                <br />
+                &nbsp;&nbsp;/*<br />
+                &nbsp; &nbsp;This is a multi-line comment in JavaScript<br />
+                &nbsp;&nbsp; It is very similar to comments in C Programming<br />
+                &nbsp;&nbsp;*/<br />
+                &lt;/script&gt;
+              </div>
+            </div>
+          </div>
+          <div id="variables_operators">
+            <h2>JavaScript Variables</h2>
+            <p>
+              Like many other programming languages, JavaScript has variables.
+              Variables can be thought of as named containers. You can place
+              data into these containers and then refer to the data simply by
+              naming the container.
+            </p>
+            <p>
+              Before you use a variable in a JavaScript program, you must
+              declare it.
+            </p>
+            <div class="examples">
+              <h3>Example:</h3>
+              <p>Variables are declared with the var keyword as follows:</p>
+              <div class="code">
+                var money;<br />
+                var name;
+              </div>
+              <p>
+                You can also declare multiple variables with the same var
+                keyword as follows
+              </p>
+              <div class="code">var money, name;</div>
+            </div>
+            <h3>Variable Initialization</h3>
+            <p>
+              Storing a value in a variable is called variable initialization.
+              You can do variable initialization at the time of variable
+              creation or at a later point in time when you need that variable.
+            </p>
+            <div class="examples">
+              <h3>Example:</h3>
+              <p>
+                For instance, you might create a variable named money and assign
+                the value 2000.50 to it later:
+              </p>
+              <div class="code">
+                var money;<br />
+                money = 2000.50;
+              </div>
+              <p>
+                For another variable, you can assign a value at the time of
+                initialization as follows:
+              </p>
+              <div class="code">var name = "IWT";</div>
+            </div>
+            <p>
+              JavaScript is an untyped language. This means that a JavaScript
+              variable can hold a value of any data type. Unlike many other
+              languages, you don't have to tell JavaScript during variable
+              declaration what type of value the variable will hold. The value
+              type of a variable can change during the execution of a program
+              and JavaScript takes care of it automatically.
+            </p>
+            <h3>JavaScript Variable Scope</h3>
+            <p>
+              The scope of a variable is the region of your program in which it
+              is defined. JavaScript variables have only two scopes:
+            </p>
+            <ul>
+              <li>
+                <b>Global Variables</b> − A global variable has global scope
+                which means it can be defined anywhere in your JavaScript code.
+              </li>
+              <li>
+                <b>Global Variables</b> − A local variable will be visible only
+                within a function where it is defined. Function parameters are
+                always local to that function.
+              </li>
+            </ul>
+            <p>
+              Within the body of a function, a local variable takes precedence
+              over a global variable with the same name. If you declare a local
+              variable or function parameter with the same name as a global
+              variable, you effectively hide the global variable.
+            </p>
+            <h3>JavaScript Variable Names</h3>
+            <p>
+              While naming your variables in JavaScript, keep the following
+              rules in mind:
+            </p>
+            <ul>
+              <li>
+                You should not use any of the JavaScript reserved keywords as a
+                variable name. These keywords are mentioned in the next section.
+                For example, break or boolean variable names are not valid.
+              </li>
+              <li>
+                JavaScript variable names should not start with a numeral (0-9).
+                They must begin with a letter or an underscore character. For
+                example, 123test is an invalid variable name but _123test is a
+                valid one.
+              </li>
+              <li>
+                JavaScript variable names are case-sensitive. For example, Name
+                and name are two different variables.
+              </li>
+            </ul>
+            <h2>JavaScript Operators</h2>
+            <p>
+              In the expression 4 + 5 = 9, 4, 5 and 9 are called the opearnds
+              while + and = are called the operators.
+            </p>
+            <p>JavaScript supports the following types of operators:</p>
+            <ul>
+              <li>Arithmetic Operators</li>
+              <li>Comparison Operators</li>
+              <li>Logical (or Relational) Operators</li>
+              <li>Assignment Operators</li>
+              <li>Conditional (or ternary) Operators</li>
+            </ul>
+            <h3>Arithmetic Operators</h3>
+            JavaScript supports<br />+ (Addition)<br />- (Subtraction)<br />*
+            (Multiplication)<br />/ (Division)<br />% (Modulus)<br />++
+            (Increment)<br />-- (Decrement)
+            <div class="examples">
+              <h3>Example:</h3>
+              <p>
+                The following code shows how to use arithmetic operators in
+                JavaScript:
+              </p>
+              <div class="code">
+                var a = 33; <br />
+                var b = 10;<br />
+                var c = "Test";<br />
+                var linebreak = "&lt;br /&gt;";<br /><br />
+
+                document.write("a + b = ");<br />
+                result = a + b;<br />
+                document.write(result);<br />
+                document.write(linebreak);<br />
+                <br />
+                document.write("a - b = ");<br />
+                result = a - b;<br />
+                document.write(result);<br />
+                document.write(linebreak);<br />
+                <br />
+                document.write("a / b = ");<br />
+                result = a / b;<br />
+                document.write(result);<br />
+                document.write(linebreak);<br />
+                <br />
+                document.write("a % b = ");<br />
+                result = a % b;<br />
+                document.write(result);<br />
+                document.write(linebreak);<br />
+                <br />
+                document.write("a + b + c = ");<br />
+                result = a + b + c;<br />
+                document.write(result);<br />
+                document.write(linebreak);<br />
+                <br />
+                a = ++a;<br />
+                document.write("++a = ");<br />
+                result = ++a;<br />
+                document.write(result);<br />
+                document.write(linebreak);<br />
+                <br />
+                b = --b;<br />
+                document.write("--b = ");<br />
+                result = --b;<br />
+                document.write(result);<br />
+                document.write(linebreak);<br />
+              </div>
+            </div>
+            <h3>Comparison Operators</h3>
+            <p>JavaScript supports the following comparison operators:</p>
+            <ul>
+              <li>
+                <b>== (Equal) - </b>
+                Checks if the value of two operands are equal or not, if yes,
+                then the condition becomes true.
+              </li>
+              <li>
+                <b>!= (Not Equal) - </b>
+                Checks if the value of two operands are equal or not, if the
+                values are not equal, then the condition becomes true.
+              </li>
+              <li>
+                <b>> (Greater than) - </b>
+                Checks if the value of the left operand is greater than the
+                value of the right operand, if yes, then the condition becomes
+                true.
+              </li>
+              <li>
+                <b>< (Less than) - </b>
+                Checks if the value of the left operand is less than the value
+                of the right operand, if yes, then the condition becomes true.
+              </li>
+              <li>
+                <b>>= (Greater than or Equal to) - </b>
+                Checks if the value of the left operand is greater than or equal
+                to the value of the right operand, if yes, then the condition
+                becomes true.
+              </li>
+              <li>
+                <b><= (Less than or Equal to) - </b>
+                Checks if the value of the left operand is less than or equal to
+                the value of the right operand, if yes, then the condition
+                becomes true.
+              </li>
+            </ul>
+            <div class="examples">
+              <h3>Example:</h3>
+              <p>
+                The following code shows how to use comparison operators in
+                JavaScript:
+              </p>
+              <div class="code">
+                var a = 10;<br />
+                var b = 20;<br />
+                var linebreak = "&lt;br /&gt;";<br /><br />
+
+                document.write("(a == b) => ");<br />
+                result = (a == b);<br />
+                document.write(result);<br />
+                document.write(linebreak);<br />
+                <br />
+                document.write("(a < b) => ");<br />
+                result = (a < b);<br />
+                document.write(result);<br />
+                document.write(linebreak);<br />
+                <br />
+                document.write("(a > b) => ");<br />
+                result = (a > b);<br />
+                document.write(result);<br />
+                document.write(linebreak);<br />
+                <br />
+                document.write("(a != b) => ");<br />
+                result = (a != b);<br />
+                document.write(result);<br />
+                document.write(linebreak);<br />
+                <br />
+                document.write("(a >= b) => ");<br />
+                result = (a >= b);<br />
+                document.write(result);<br />
+                document.write(linebreak);<br />
+                <br />
+                document.write("(a <= b) => ");<br />
+                result = (a <= b);<br />
+                document.write(result);<br />
+                document.write(linebreak);<br />
+              </div>
+            </div>
+            <h3>Logical Operators</h3>
+            <p>JavaScript supports the following logical operators:</p>
+            <ul>
+              <li>
+                <b>&& (Logical AND) - </b>
+                If both the operands are non-zero, then the condition becomes
+                true.
+              </li>
+              <li>
+                <b>|| (Logical OR) - </b>
+                If any of the two operands are non-zero, then the condition
+                becomes true.
+              </li>
+              <li>
+                <b>! (Logical NOT) - </b>
+                Reverses the logical state of its operand. If a condition is
+                true, then the Logical NOT operator will make it false.
+              </li>
+            </ul>
+            <div class="examples">
+              <h3>Example:</h3>
+              <p>
+                Try the following code to learn how to implement Logical
+                Operators in JavaScript:
+              </p>
+              <div class="code">
+                var a = true;<br />
+                var b = false;<br />
+                var linebreak = "&lt;br /&gt;";<br /><br />
+
+                document.write("(a && b) => ");<br />
+                result = (a && b);<br />
+                document.write(result);<br />
+                document.write(linebreak);<br />
+                <br />
+                document.write("(a || b) => ");<br />
+                result = (a || b);<br />
+                document.write(result);<br />
+                document.write(linebreak);<br />
+                <br />
+                document.write("!(a && b) => ");<br />
+                result = (!(a && b));<br />
+                document.write(result);<br />
+                document.write(linebreak);<br />
+              </div>
+            </div>
+            <h3>Bitwise Operators</h3>
+            <p>JavaScript supports the following bitwise operators:</p>
+            <ul>
+              <li>
+                <b>& (Bitwise AND) - </b>
+                It performs a Boolean AND operation on each bit of its integer
+                arguments.
+              </li>
+              <li>
+                <b>| (BitWise OR) - </b>
+                It performs a Boolean OR operation on each bit of its integer
+                arguments.
+              </li>
+              <li>
+                <b>^ (Bitwise XOR) - </b>
+                It performs a Boolean exclusive OR operation on each bit of its
+                integer arguments. Exclusive OR means that either operand one is
+                true or operand two is true, but not both.
+              </li>
+              <li>
+                <b>~ (Bitwise Not) - </b>
+                It is a unary operator and operates by reversing all the bits in
+                the operand.
+              </li>
+              <li>
+                <b><< (Left Shift) - </b>
+                It moves all the bits in its first operand to the left by the
+                number of places specified in the second operand. New bits are
+                filled with zeros. Shifting a value left by one position is
+                equivalent to multiplying it by 2, shifting two positions is
+                equivalent to multiplying by 4, and so on.
+              </li>
+              <li>
+                <b>>> (Right Shift) - </b>
+                Binary Right Shift Operator. The left operand’s value is moved
+                right by the number of bits specified by the right operand.
+              </li>
+            </ul>
+            <div class="examples">
+              <h3>Example:</h3>
+              <p>
+                Try the following code to implement the Bitwise operator in
+                JavaScript:
+              </p>
+              <div class="code">
+                var a = 2; // Bit presentation 10 <br />
+                var b = 3; // Bit presentation 11<br />
+                var linebreak = "&lt;br /&gt;";<br /><br />
+
+                document.write("(a & b) => ");<br />
+                result = (a & b);<br />
+                document.write(result);<br />
+                document.write(linebreak);<br /><br />
+
+                document.write("(a | b) => ");<br />
+                result = (a | b);<br />
+                document.write(result);<br />
+                document.write(linebreak);<br /><br />
+
+                document.write("(a ^ b) => ");<br />
+                result = (a ^ b);<br />
+                document.write(result);<br />
+                document.write(linebreak);<br /><br />
+
+                document.write("(~b) => ");<br />
+                result = (~b);<br />
+                document.write(result);<br />
+                document.write(linebreak);<br /><br />
+
+                document.write("(a << b) => ");<br />
+                result = (a << b);<br />
+                document.write(result);<br />
+                document.write(linebreak);<br /><br />
+
+                document.write("(a >> b) => ");<br />
+                result = (a >> b);<br />
+                document.write(result);<br />
+                document.write(linebreak);<br />
+              </div>
+            </div>
+            <h3>Assignment Operators</h3>
+            <p>JavaScript supports the following assignment operators:</p>
+            <ul>
+              <li>
+                <b>= (Simple Assignment ) - </b>
+                Assigns values from the right side operand to the left side
+                operand
+              </li>
+              <li>
+                <b>+= (Add and Assignment) - </b>
+                It adds the right operand to the left operand and assigns the
+                result to the left operand.
+              </li>
+              <li>
+                <b>−= (Subtract and Assignment) - </b>
+                It subtracts the right operand from the left operand and assigns
+                the result to the left operand.
+              </li>
+              <li>
+                <b>*= (Multiply and Assignment) - </b>
+                It multiplies the right operand with the left operand and
+                assigns the result to the left operand.
+              </li>
+              <li>
+                <b>/= (Divide and Assignment) - </b>
+                It divides the left operand with the right operand and assigns
+                the result to the left operand.
+              </li>
+              <li>
+                <b>%= (Modules and Assignment) - </b>
+                It takes modulus using two operands and assigns the result to
+                the left operand.
+              </li>
+            </ul>
+            <div class="examples">
+              <h3>Example:</h3>
+              <p>
+                Try the following code to implement assignment operators in
+                JavaScript:
+              </p>
+              <div class="code">
+                var a = 33;<br />
+                var b = 10;<br />
+                var linebreak = "&lt;br /&gt;";<br /><br />
+
+                document.write("Value of a => (a = b) => ");<br />
+                result = (a = b);<br />
+                document.write(result);<br />
+                document.write(linebreak);<br /><br />
+
+                document.write("Value of a => (a += b) => ");<br />
+                result = (a += b);<br />
+                document.write(result);<br />
+                document.write(linebreak);<br /><br />
+
+                document.write("Value of a => (a -= b) => ");<br />
+                result = (a -= b);<br />
+                document.write(result);<br />
+                document.write(linebreak);<br /><br />
+
+                document.write("Value of a => (a *= b) => ");<br />
+                result = (a *= b);<br />
+                document.write(result);<br />
+                document.write(linebreak);<br /><br />
+
+                document.write("Value of a => (a /= b) => ");<br />
+                result = (a /= b);<br />
+                document.write(result);<br />
+                document.write(linebreak);<br /><br />
+
+                document.write("Value of a => (a %= b) => ");<br />
+                result = (a %= b);<br />
+                document.write(result);<br />
+                document.write(linebreak);<br />
+              </div>
+            </div>
+            <h3>Conditional Operator</h3>
+            <p>
+              <b>? : (Conditional ) - </b>
+              The conditional operator first evaluates an expression for a true
+              or false value and then executes one of the two given statements
+              depending upon the result of the evaluation.
+            </p>
+            <div class="examples">
+              <h3>Example:</h3>
+              <p>
+                Try the following code to understand how the Conditional
+                Operator works in JavaScript:
+              </p>
+              <div class="code">
+                var a = 10;<br />
+                var b = 20;<br />
+                var linebreak = "&lt;br /&gt;";<br /><br />
+
+                document.write ("((a > b) ? 100 : 200) => ");<br />
+                result = (a > b) ? 100 : 200;<br />
+                document.write(result);<br />
+                document.write(linebreak);<br /><br />
+
+                document.write ("((a < b) ? 100 : 200) => ");<br />
+                result = (a < b) ? 100 : 200;<br />
+                document.write(result);<br />
+                document.write(linebreak);<br />
+              </div>
+            </div>
+          </div>
+          <div id="forms">
+            <h2>JavaScript Forms</h2>
+            <h3>JavaScript Form Validation</h3>
+            <p>
+              HTML form validation can be done by JavaScript.
+
+            </p>
+            <p>
+              If a form field (fname) is empty, this function alerts a message, and returns false, to prevent the form from being submitted:
+
+            </p>
+            <div class="examples">
+              <h3>JavaScript Example:</h3>
+              <div class="code">
+                function validateForm() {<br>
+                  &nbsp;var x = document.forms["myForm"]["fname"].value;<br>
+                  &nbsp; if (x == "") {<br>
+                    &nbsp;&nbsp; alert("Name must be filled out");<br>
+                    &nbsp;&nbsp; return false;<br>
+                    &nbsp;&nbsp;&nbsp;}<br>
+                    &nbsp;}      <br>
+              </div>
+              <p>The function can be called when the form is submitted:</p>
+              <h3>HTML Form Example:</h3>
+              <div class="code">
+                &lt;form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post"&gt;<br>
+                 &nbsp;&nbsp; Name: &lt;input type="text" name="fname"&gt;<br>
+                 &nbsp;&nbsp; &lt;input type="submit" value="Submit"&gt;<br>
+                  &lt;/form&gt;<br>
+
+              </div>
+            </div>
+          </div>
+          <div id="functions">
+            <h2>JavaScript - Functions</h2>
+            <p>A function is a group of reusable code which can be called anywhere in your program. This eliminates the need of writing the same code again and again. It helps programmers in writing modular codes. Functions allow a programmer to divide a big program into a number of small and manageable functions</p>
+            <p>Like any other advanced programming language, JavaScript also supports all the features necessary to write modular code using functions. You must have seen functions like alert() and write() in the earlier chapters. We were using these functions again and again, but they had been written in core JavaScript only once</p>
+            <p>JavaScript allows us to write our own functions as well. This section explains how to write your own functions in JavaScript</p>
+             <div>
+               <h3>Function Definition</h3>
+               <p>Before we use a function, we need to define it. The most common way to define a function in JavaScript is by using the function keyword, followed by a unique function name, a list of parameters (that might be empty), and a statement block surrounded by curly braces.</p>
+             </div>
+             <div>
+               <h4>Syntax</h4>
+               <p>The basic syntax is shown here.</p>
+                 <div>
+                  <span class="monospace">&lt;script type = "text/javascript"></span><br>
+                   <span class="monospace">&lt;!--</span><br>
+                   <span class="monospace">&nbsp;&nbsp;function functionname(parameter-list)</span> {<br>
+                   <span class="monospace">&nbsp;&nbsp; statements</span><br>
+                   <span class="monospace">&nbsp;&nbsp;}</span><br>
+                   <span class="monospace">&nbsp;&nbsp;//--></span><br>
+                   <span class="monospace">&lt;/script></span>
+                 </div>
+
+             </div>
+             <div class="examples">
+               <h3>Example:</h3>
+               <div class="code">
+                 &lt;script type = "text/javascript"><br>
+                 &lt;!--<br>
+                 &nbsp;&nbsp;function sayHello() {<br>
+                 &nbsp;&nbsp; alert("Hello there");<br>
+                 &nbsp;&nbsp;}<br>
+                 &nbsp;&nbsp;//--><br>
+                 &lt;/script>
+               </div>
+             </div>
+             <div>
+               <h4>Calling a Function</h4>
+               <p>To invoke a function somewhere later in the script, you would simply need to write the name of that function as shown in the following code.</p>
+             </div>
+             <div class="code">
+               &lt;html><br>
+               &nbsp;&nbsp;&lt;head><br>
+               &nbsp;&nbsp;&lt;script type = "text/javascript"><br>
+               &nbsp;&nbsp;&lt;function sayHello() {<br>
+               &nbsp;&nbsp;&lt;document.write ("Hello there!");<br>
+               &nbsp;&nbsp;&lt;}<br>
+               &lt;/script><br>
+               &nbsp;&nbsp;&lt;/head><br>
+               &lt;body><br>
+               &nbsp;&nbsp;&lt;p>Click the following button to call the function&lt;/p><br>
+               &nbsp;&nbsp;&lt;form><br>
+               &nbsp;&nbsp;&lt;input type = "button" onclick = "sayHello()" value = "Say Hello"><br>
+               &nbsp;&nbsp;&lt;/form><br>
+               &nbsp;&nbsp;&lt;p>Use different text in write method and then try...&lt;/p><br>
+               &lt;/body><br>
+               &lt;/html>
+             </div>
+             <div>
+              <h4>Function Parameters</h4>
+              <p>Till now, we have seen functions without parameters. But there is a facility to pass different parameters while calling a function. These passed parameters can be captured inside the function and any manipulation can be done over those parameters. A function can take multiple parameters separated by comma</p>
+              <div class="examples">
+                <h3>Examples</h3>
+                <div class="code">
+                  &lt;html><br>
+   &nbsp;&nbsp;&lt;head><br>
+      &nbsp;&nbsp;&lt;script type = "text/javascript"><br>
+         &nbsp;&nbsp;function sayHello(name, age) {<br>
+            &nbsp;&nbsp;document.write (name + " is " + age + " years old.");<br>
+        &nbsp;&nbsp; }<br>
+      &nbsp;&nbsp;&lt;/script><br>
+   &nbsp;&nbsp;&lt;/head><br>
+
+   &lt;body><br>
+      &nbsp;&nbsp;&lt;p>Click the following button to call the function&lt;/p><br>
+      &nbsp;&nbsp;&lt;form><br>
+         &nbsp;&nbsp;&lt;input type = "button" onclick = "sayHello('Zara', 7)" value = "Say Hello"><br>
+      &nbsp;&nbsp;&lt;/form><br>
+      &nbsp;&nbsp;&lt;p>Use different parameters inside the function and then try...&lt;/p><br>
+   &lt;/body><br>
+&lt;/html>
+
+
+                </div>
+
+              </div>
+
+             </div>
+             <div>
+              <h4>The return Statement</h4>
+              <p>A JavaScript function can have an optional return statement. This is required if you want to return a value from a function. This statement should be the last statement in a function.</p>
+              <p>For example, you can pass two numbers in a function and then you can expect the function to return their multiplication in your calling program.</p>
+              <div class="examples">
+                <h3>Example</h3>
+                <div class="code">
+                  &lt;html><br>
+   &nbsp;&nbsp;&lt;head><br>
+      &nbsp;&nbsp;&lt;script type = "text/javascript"><br>
+         &nbsp;&nbsp;function concatenate(first, last) {<br>
+            &nbsp;&nbsp;var full;<br>
+            &nbsp;&nbsp;full = first + last;<br>
+            &nbsp;&nbsp;return full;<br>
+         &nbsp;&nbsp;}<br>
+         &nbsp;&nbsp;function secondFunction() {<br>
+            &nbsp;&nbsp;var result;<br>
+          &nbsp;&nbsp;result = concatenate('Zara', 'Ali');<br>
+            &nbsp;&nbsp;document.write (result );<br>
+         &nbsp;&nbsp;}<br>
+      &nbsp;&nbsp;&lt;/script> <br>
+   &nbsp;&nbsp;&lt;/head><br>
+
+   &nbsp;&nbsp;&lt;body><br>
+      &nbsp;&nbsp;&lt;p>Click the following button to call the function&lt;/p><br>
+      &nbsp;&nbsp;&lt;form><br>
+         &nbsp;&nbsp;&lt;input type = "button" onclick = "secondFunction()" value = "Call Function"><br>
+      &nbsp;&nbsp;&lt;/form><br>
+      &nbsp;&nbsp;&lt;p>Use different parameters inside the function and then try...&lt;/p><br>
+  &nbsp;&nbsp;&lt;/body><br>
+&lt;/html><br>
+
+
+                </div>
+
+              </div>
+
+             </div>
+          </div>
+          <div id="objects_Events">
+            <h2>Objects and Events</h2>
+            <p>JavaScript is an Object Oriented Programming (OOP) language. A programming language can be called object-oriented if it provides four basic capabilities to developers −</p><br>
+            <ul>
+              <li><b>Encapsulation −</b> the capability to store related information, whether data or methods, together in an object.</li>
+              <li><b>Aggregation −</b>Aggregation − the capability to store one object inside another object.</li>
+              <li><b>Inheritance −</b> the capability of a class to rely upon another class (or number of classes) for some of its properties and methods.</li>
+              <li><b>Polymorphism −</b> the capability to write one function or method that works in a variety of different ways.</li>
+            </ul><br>
+            <p>Objects are composed of attributes. If an attribute contains a function, it is considered to be a method of the object, otherwise the attribute is considered a property.</p><br>
+            <h3>Object Properties</h3>
+            <p>Object properties can be any of the three primitive data types, or any of the abstract data types, such as another object. Object properties are usually variables that are used internally in the object's methods, but can also be globally visible variables that are used throughout the page.</p>
+            <p>The syntax for adding a property to an object is −</p>
+            <span class="monospace">objectName.objectProperty = propertyValue;</span><br>
+            <h3>Object Methods</h3>
+            <p>Methods are the functions that let the object do something or let something be done to it. There is a small difference between a function and a method – at a function is a standalone unit of statements and a method is attached to an object and can be referenced by the 'this' keyword.</p>
+            <p>Methods are useful for everything from displaying the contents of the object to the screen to performing complex mathematical operations on a group of local properties and parameters.</p>
+            <p>For example − Following is a simple example to show how to use the <span class="monospace">write()</span> method of document object to write any content on the document.</p>
+            <span class="monospace">document.write("This is test");</span><br>
+            <h3>User-Defined Objects</h3>
+            <p>All user-defined objects and built-in objects are descendants of an object called Object.</p><br>
+            <h4>The new Operator</h4>
+            <p>The new operator is used to create an instance of an object. To create an object, the new operator is followed by the constructor method.</p>
+            <p>In the following example, the constructor methods are Object(), Array(), and Date(). These constructors are built-in JavaScript functions.</p>
+            <span class="monospace">var employee = new Object();</span><br>
+            <span class="monospace">var books = new Array("C++", "Perl", "Java");</span><br>
+            <span class="monospace">var day = new Date("August 15, 1947");</span><br>
+            <h4>The Object() Constructor</h4>
+            <p>A constructor is a function that creates and initializes an object. JavaScript provides a special constructor function called Object() to build the object. The return value of the Object() constructor is assigned to a variable.</p>
+            <p>The variable contains a reference to the new object. The properties assigned to the object are not variables and are not defined with the var keyword.</p>
+            <div class="examples">
+              <h3>Examples</h3>
+              <div class="code">
+                &lt;html><br>
+   &nbsp;&nbsp;&lt;head><br>
+      &nbsp;&nbsp;&lt;title>User-defined objects</title> <br>
+      &nbsp;&nbsp;&lt;script type = "text/javascript"><br>
+         &nbsp;&nbsp;var book = new Object();  &nbsp;&nbsp; // Create the object <br>
+         &nbsp;&nbsp;book.subject = "Perl";   &nbsp;&nbsp;  // Assign properties to the object <br>
+         &nbsp;&nbsp;book.author  = "Mohtashim";<br>
+      &nbsp;&nbsp;&lt;/script> <br>
+   &nbsp;&nbsp;&lt;/head><br>
+
+   &nbsp;&nbsp;&lt;body><br>
+      &nbsp;&nbsp;&lt;script type = "text/javascript"><br>
+         &nbsp;&nbsp;document.write("Book name is : " + book.subject + "&lt;br>"); <br>
+         &nbsp;&nbsp;document.write("Book author is : " + book.author + "&lt;br>"); <br>
+      &nbsp;&nbsp;&lt;/script>  <br>
+   &nbsp;&nbsp;&lt;/body><br>
+&lt;/html><br>
+
+
+
+              </div>
+
+            </div>
+
+    <div >
+      <h3>Defining Methods for an Object</h3>
+      <p>The previous examples demonstrate how the constructor creates the object and assigns properties. But we need to complete the definition of an object by assigning methods to it.</p>
+      <div class="examples">
+        <h3>Ezample</h3>
+        <div class="code">
+          &lt;html><br>
+
+   &nbsp;&nbsp;&lt;head><br>
+   &nbsp;&nbsp;&lt;title>User-defined objects</title><br>
+      &nbsp;&nbsp;&lt;script type = "text/javascript"><br>
+         &nbsp;&nbsp;// Define a function which will work as a method <br>
+         &nbsp;&nbsp;function addPrice(amount) {<br>
+            &nbsp;&nbsp;this.price = amount; <br>
+         &nbsp;&nbsp;}<br>
+
+         &nbsp;&nbsp;function book(title, author) {<br>
+            &nbsp;&nbsp;this.title = title;<br>
+            &nbsp;&nbsp;this.author  = author;<br>
+            &nbsp;&nbsp;this.addPrice = addPrice; &nbsp;&nbsp; // Assign that method as property.<br>
+         &nbsp;&nbsp;}<br>
+      &nbsp;&nbsp;&lt;/script> <br>
+   &nbsp;&nbsp;&lt;/head><br>
+
+   &nbsp;&nbsp;&lt;body> <br>
+      &nbsp;&nbsp;&lt;script type = "text/javascript"><br>
+         &nbsp;&nbsp;var myBook = new book("Perl", "Mohtashim");<br>
+         &nbsp;&nbsp;myBook.addPrice(100);<br>
+
+         &nbsp;&nbsp;document.write("Book title is : " + myBook.title + "&lt;br>");<br>
+         &nbsp;&nbsp;&lt;document.write("Book author is : " + myBook.author + "&lt;br>");<br>
+         &nbsp;&nbsp;&lt;document.write("Book price is : " + myBook.price + "&lt;br>");<br>
+      &nbsp;&nbsp;&lt;/script>  <br>
+   &nbsp;&nbsp;&lt;/body><br>
+&lt;/html><br>
+
+
+        </div>
+
+      </div>
+
+    </div>
+
+<div>
+  <h3>Events</h3>
+  <div>
+    <h4>what is an Event</h4>
+    <p>JavaScript's interaction with HTML is handled through events that occur when the user or the browser manipulates a page.</p>
+    <p>When the page loads, it is called an event. When the user clicks a button, that click too is an event. Other examples include events like pressing any key, closing a window, resizing a window, etc.</p>
+    <p>Developers can use these events to execute JavaScript coded responses, which cause buttons to close windows, messages to be displayed to users, data to be validated, and virtually any other type of response imaginable.</p>
+    <p>Events are a part of the Document Object Model (DOM) Level 3 and every HTML element contains a set of events which can trigger JavaScript Code.</p>
+  </div>
+  <div>
+    <h4>onclick Event Type</h4>
+    <p>This is the most frequently used event type which occurs when a user clicks the left button of his mouse. You can put your validation, warning etc., against this event type.</p>
+    <br>
+    <div class="examples">
+      <h3>Example</h3>
+      <div class="code">
+        &lt;html><br>
+   &nbsp;&nbsp;&lt;head>   <br>
+      &nbsp;&nbsp;&lt;script type = "text/javascript"><br>
+         &nbsp;&nbsp;&lt;!-- <br>
+            &nbsp;&nbsp;function sayHello() { <br>
+               &nbsp;&nbsp;alert("Hello World") <br>
+            &nbsp;&nbsp;} <br>
+         &nbsp;&nbsp;//--> <br>
+      &nbsp;&nbsp;&lt;/script> <br>
+   &nbsp;&nbsp;&lt;/head><br>
+
+   &nbsp;&nbsp;&lt;body><br>
+      &nbsp;&nbsp;&lt;p>Click the following button and see result&lt;/p>  <br>
+      &nbsp;&nbsp;&lt;form><br>
+         &nbsp;&nbsp;&lt;input type = "button" onclick = "sayHello()" value = "Say Hello" /><br>
+      &nbsp;&nbsp;&lt;/form>   <br>
+   &nbsp;&nbsp;&lt;/body> <br>
+&lt;/html><br>
+
+
+      </div>
+
+
+    </div>
+</div>
+<div>
+  <h4>onsubmit Event Type</h4>
+  <p>onsubmit is an event that occurs when you try to submit a form. You can put your form validation against this event type.</p>
+  <div class="examples">
+    <h3>Example</h3>
+    <div class="code">
+      &lt;html><br>
+   &nbsp;&nbsp;&lt;head><br>
+      &nbsp;&nbsp;&lt;script type = "text/javascript"><br>
+         &nbsp;&nbsp;&lt;!--<br>
+            &nbsp;&nbsp;function validation() {<br>
+            &nbsp;&nbsp;   all validation goes here <br>
+              &nbsp;&nbsp; .........<br>
+              &nbsp;&nbsp; return either true or false <br>
+            &nbsp;&nbsp;}<br>
+         &nbsp;&nbsp;//--><br>
+      &nbsp;&nbsp;&lt;/script>   <br>
+  &nbsp;&nbsp;&lt; /head><br>
+
+   &nbsp;&nbsp;&lt;body>   <br>
+      &nbsp;&nbsp;&lt;form method = "POST" action = "t.cgi" onsubmit = "return validate()"><br>
+         &nbsp;&nbsp;.......<br>
+         &nbsp;&nbsp;&lt;input type = "submit" value = "Submit" /><br>
+      &nbsp;&nbsp;&lt;/form><br>
+    &nbsp;&nbsp;&lt;/body><br>
+&lt;/html><br>
+
+
+    </div>
+
+  </div>
+</div>
+<div>
+  <h4>Onmouseover and Onmouseout</h4>
+  <p>These two event types will help you create nice effects with images or even with text as well. The onmouseover event triggers when you bring your mouse over any element and the onmouseout triggers when you move your mouse out from that element. Try the following example.</p>
+  <div class="examples">
+    <div class="code">
+      &lt;html><br>
+     &nbsp;&nbsp;&lt;head>  <br>
+        &nbsp;&nbsp;&lt;script type = "text/javascript"><br>
+           &nbsp;&nbsp;&lt;!--<br>
+            &nbsp;&nbsp;  function over() {<br>
+                 &nbsp;&nbsp;document.write ("Mouse Over");<br>
+              &nbsp;&nbsp;}     <br>
+              &nbsp;&nbsp;&nbsp;&nbsp;function out() {<br>
+                 &nbsp;&nbsp;document.write ("Mouse Out");<br>
+              &nbsp;&nbsp;}          <br>
+           &nbsp;&nbsp;//--><br>
+        &nbsp;&nbsp;&lt;/script>  <br>
+     &nbsp;&nbsp;&lt;/head><br>
+
+     &nbsp;&nbsp;&lt;body><br>
+        &nbsp;&nbsp;&lt;p>Bring your mouse inside the division to see the result:&lt;/p>    <br>
+        &nbsp;&nbsp;&lt;div onmouseover = "over()" onmouseout = "out()"><br>
+           &nbsp;&nbsp;&lt;h2> This is inside the division &lt;/h2><br>
+        &nbsp;&nbsp;&lt;/div>    <br>
+     &nbsp;&nbsp;&lt;/body><br>
+  &lt;/html><br>
+
+
+    </div>
+
+  </div>
+
+</div>
+
+
+</div>
+
+          </div>
+          <div id="S_N_A">
+            <h2>Strings,Numbers,Arrays</h2>
+            <div class="Strings">
+              <div>
+                <h3>Strings</h3>
+                <p>The String object lets you work with a series of characters; it wraps Javascript's string primitive data type with a number of helper methods.</p>
+                <p>As JavaScript automatically converts between string primitives and String objects, you can call any of the helper methods of the String object on a string primitive.</p>
+                <h4>Syntax</h4>
+                <span class="monospace">var val = new String(string);</span><br>
+                <p>The String parameter is a series of characters that has been properly encoded.</p>
+              </div>
+              <div>
+                <h4>String Properties</h4>
+                <p>Here is a list of the properties of String object and their description.</p>
+
+                <div class="Table">
+                  <table class="table table-bordered">
+<tr>
+<th style="text-align:center;">Sr.No.</th>
+<th style="text-align:center;">Property &amp; Description</th>
+</tr>
+<tr>
+<td class="ts">1</td>
+<td>constructor
+<p>Returns a reference to the String function that created the object.</p></td>
+</tr>
+<tr>
+<td class="ts">2</td>
+<td>length
+<p>Returns the length of the string.</p></td>
+</tr>
+<tr>
+<td class="ts">3</td>
+<td>prototype
+<p>The prototype property allows you to add properties and methods to an object.</p></td>
+</tr>
+</table>
+
+                </div>
+              </div>
+              <div>
+                <h4>Strings Methods</h4>
+                <p>Here is a list of the methods available in String object along with their description.</p>
+
+                <div class="Table">
+                  <table class="table table-bordered">
+<tr>
+<th style="text-align:center;">Sr.No.</th>
+<th style="text-align:center;">Method &amp; Description</th>
+</tr>
+<tr>
+<td class="ts">1</td>
+<td>charAt()
+<p>Returns the character at the specified index.</p></td>
+</tr>
+<tr>
+<td class="ts">2</td>
+<td>charCodeAt()
+<p>Returns a number indicating the Unicode value of the character at the given index.</p></td>
+</tr>
+<tr>
+<td class="ts">3</td>
+<td>concat()
+<p>Combines the text of two strings and returns a new string.</p></td>
+</tr>
+<tr>
+<td class="ts">4</td>
+<td>indexOf()
+<p>Returns the index within the calling String object of the first occurrence of the specified value, or -1 if not found.</p></td>
+</tr>
+<tr>
+<td class="ts">5</td>
+<td>lastIndexOf()
+<p>Returns the index within the calling String object of the last occurrence of the specified value, or -1 if not found.</p></td>
+</tr>
+<tr>
+<td class="ts">6</td>
+<td>localeCompare()
+<p>Returns a number indicating whether a reference string comes before or after or is the same as the given string in sort order.</p></td>
+</tr>
+<tr>
+<td class="ts">7</td>
+<td>match()
+<p>Used to match a regular expression against a string.</p></td>
+</tr>
+<tr>
+<td class="ts">8</td>
+<td>replace()
+<p>Used to find a match between a regular expression and a string, and to replace the matched substring with a new substring.</p></td>
+</tr>
+<tr>
+<td class="ts">9</td>
+<td>search()
+<p>Executes the search for a match between a regular expression and a specified string.</p></td>
+</tr>
+<tr>
+<td class="ts">10</td>
+<td>slice()
+<p>Extracts a section of a string and returns a new string.</p></td>
+</tr>
+<tr>
+<td class="ts">11</td>
+<td>split()
+<p>Splits a String object into an array of strings by separating the string into substrings.</p></td>
+</tr>
+<tr>
+<td class="ts">12</td>
+<td>substr()
+<p>Returns the characters in a string beginning at the specified location through the specified number of characters.</p></td>
+</tr>
+<tr>
+<td class="ts">13</td>
+<td>substring()
+<p>Returns the characters in a string between two indexes into the string.</p></td>
+</tr>
+<tr>
+<td class="ts">14</td>
+<td>toLocaleLowerCase()
+<p>The characters within a string are converted to lower case while respecting the current locale.</p></td>
+</tr>
+<tr>
+<td class="ts">15</td>
+<td>toLocaleUpperCase()
+<p>The characters within a string are converted to upper case while respecting the current locale.</p></td>
+</tr>
+<tr>
+<td class="ts">16</td>
+<td>toLowerCase()
+<p>Returns the calling string value converted to lower case.</p></td>
+</tr>
+<tr>
+<td class="ts">17</td>
+<td>toString()
+<p>Returns a string representing the specified object.</p></td>
+</tr>
+<tr>
+<td class="ts">18</td>
+<td>toUpperCase()
+<p>Returns the calling string value converted to uppercase.</p></td>
+</tr>
+<tr>
+<td class="ts">19</td>
+<td>valueOf()
+<p>Returns the primitive value of the specified object.</p></td>
+</tr>
+</table>
+
+                </div>
+              </div>
+              <div>
+                <h4>String HTML Wrappers</h4>
+                <p>Here is a list of the methods that return a copy of the string wrapped inside an appropriate HTML tag.</p>
+
+
+                <div class="Table">
+                  <table class="table table-bordered">
+<tr>
+<th style="text-align:center;">Sr.No.</th>
+<th style="text-align:center;">Method &amp; Description</th>
+</tr>
+<tr>
+<td class="ts">1</td>
+<td>anchor()
+<p>Creates an HTML anchor that is used as a hypertext target.</p></td>
+</tr>
+<tr>
+<td class="ts">2</td>
+<td>big()
+<p>Creates a string to be displayed in a big font as if it were in a &lt;big&gt; tag.</p></td>
+</tr>
+<tr>
+<td class="ts">3</td>
+<td>blink()
+<p>Creates a string to blink as if it were in a &lt;blink&gt; tag.</p></td>
+</tr>
+<tr>
+<td class="ts">4</td>
+<td>bold()
+<p>Creates a string to be displayed as bold as if it were in a &lt;b&gt; tag.</p></td>
+</tr>
+<tr>
+<td class="ts">5</td>
+<td>fixed()
+<p>Causes a string to be displayed in fixed-pitch font as if it were in a &lt;tt&gt; tag</p></td>
+</tr>
+<tr>
+<td class="ts">6</td>
+<td>fontcolor()
+<p>Causes a string to be displayed in the specified color as if it were in a &lt;font color="color"&gt; tag.</p></td>
+</tr>
+<tr>
+<td class="ts">7</td>
+<td>fontsize()
+<p>Causes a string to be displayed in the specified font size as if it were in a &lt;font size="size"&gt; tag.</p></td>
+</tr>
+<tr>
+<td class="ts">8</td>
+<td>italics()
+<p>Causes a string to be italic, as if it were in an &lt;i&gt; tag.</p></td>
+</tr>
+<tr>
+<td class="ts">9</td>
+<td>link()
+<p>Creates an HTML hypertext link that requests another URL.</p></td>
+</tr>
+<tr>
+<td class="ts">10</td>
+<td>small()
+<p>Causes a string to be displayed in a small font, as if it were in a &lt;small&gt; tag.</p></td>
+</tr>
+<tr>
+<td class="ts">11</td>
+<td>strike()
+<p>Causes a string to be displayed as struck-out text, as if it were in a &lt;strike&gt; tag.</p></td>
+</tr>
+<tr>
+<td class="ts">12</td>
+<td>sub()
+<p>Causes a string to be displayed as a subscript, as if it were in a &lt;sub&gt; tag</p></td>
+</tr>
+<tr>
+<td class="ts">13</td>
+<td>sup()
+<p>Causes a string to be displayed as a superscript, as if it were in a &lt;sup&gt; tag</p></td>
+</tr>
+</table>
+
+                </div>
+              </div>
+
+            </div>
+            <div class="Numbers">
+              <h3>Numbers</h3>
+              <div>
+              <p>The Number object represents numerical date, either integers or floating-point numbers. In general, you do not need to worry about Number objects because the browser automatically converts number literals to instances of the number class.</p>
+              <h4>Syntax</h4>
+              <p>The syntax for creating a number object is as follows −</p>
+              <span class="monospace">var val = new Number(number);</span><br>
+              <p>In the place of number, if you provide any non-number argument, then the argument cannot be converted into a number, it returns NaN (Not-a-Number).</p>
+              </div>
+              <div>
+                <h4>Number Properties</h4>
+                <p>Here is a list of each property and their description.</p>
+
+                <div class="Table">
+                  <table class="table table-bordered">
+  <tr>
+  <th style="text-align:center;">Sr.No.</th>
+  <th style="text-align:center;">Property &amp; Description</th>
+  </tr>
+  <tr>
+  <td class="ts">1</td>
+  <td>MAX_VALUE
+  <p>The largest possible value a number in JavaScript can have 1.7976931348623157E+308</p></td>
+  </tr>
+  <tr>
+  <td class="ts">2</td>
+  <td>MIN_VALUE
+  <p>The smallest possible value a number in JavaScript can have 5E-324</p></td>
+  </tr>
+  <tr>
+  <td class="ts">3</td>
+  <td>NaN
+  <p>Equal to a value that is not a number.</p></td>
+  </tr>
+  <tr>
+  <td class="ts">4</td>
+  <td>NEGATIVE_INFINITY
+  <p>A value that is less than MIN_VALUE.</p></td>
+  </tr>
+  <tr>
+  <td class="ts">5</td>
+  <td>POSITIVE_INFINITY
+  <p>A value that is greater than MAX_VALUE</p></td>
+  </tr>
+  <tr>
+  <td class="ts">6</td>
+  <td>prototype
+  <p>A static property of the Number object. Use the prototype property to assign new properties and methods to the Number object in the current document</p></td>
+  </tr>
+  <tr>
+  <td class="ts">7</td>
+  <td>constructor
+  <p>Returns the function that created this object's instance. By default this is the Number object.</p></td>
+  </tr>
+  </table>
+
+                </div>
+              </div>
+              <div>
+                <h4>Number Methods</h4>
+                <p>The Number object contains only the default methods that are a part of every object's definition.</p>
+
+                <div class="Table">
+                  <table class="table table-bordered">
+<tr>
+<th style="text-align:center;">Sr.No.</th>
+<th style="text-align:center;">Method &amp; Description</th>
+</tr>
+<tr>
+<td class="ts">1</td>
+<td>toExponential()
+<p>Forces a number to display in exponential notation, even if the number is in the range in which JavaScript normally uses standard notation.</p></td>
+</tr>
+<tr>
+<td class="ts">2</td>
+<td>toFixed()
+<p>Formats a number with a specific number of digits to the right of the decimal.</p></td>
+</tr>
+<tr>
+<td class="ts">3</td>
+<td>toLocaleString()</a>
+<p>Returns a string value version of the current number in a format that may vary according to a browser's local settings.</p></td>
+</tr>
+<tr>
+<td class="ts">4</td>
+<td>toPrecision()</a>
+<p>Defines how many total digits (including digits to the left and right of the decimal) to display of a number.</p></td>
+</tr>
+<tr>
+<td class="ts">5</td>
+<td>toString()</a>
+<p>Returns the string representation of the number's value.</p></td>
+</tr>
+<tr>
+<td class="ts">6</td>
+<td>valueOf()</a>
+<p>Returns the number's value.</p></td>
+</tr>
+</table>
+
+                </div>
+              </div>
+
+
+              </div>
+              <div class="Arrays">
+                <h3>Arrays</h3>
+                <div>
+                  <p>The Array object lets you store multiple values in a single variable. It stores a fixed-size sequential collection of elements of the same type. An array is used to store a collection of data, but it is often more useful to think of an array as a collection of variables of the same type.</p>
+                  <h4>Syntax</h4>
+                  <p>Use the following syntax to create an Array object −</p>
+                  <span class="monospace">var fruits = new Array( "apple", "orange", "mango" );</span>
+
+                </div>
+                <div>
+                  <h4>Array Properties</h4>
+                  <p>Here is a list of the properties of the Array object along with their description.</p>
+
+                    <div class="Table">
+                      <table class="table table-bordered">
+<tr>
+<th style="text-align:center;">Sr.No.</th>
+<th style="text-align:center;">Property &amp; Description</th>
+</tr>
+<tr>
+<td class="ts">1</td>
+<td>constructor
+<p>Returns a reference to the array function that created the object.</p></td>
+</tr>
+<tr>
+<td class="ts">2</td>
+<td><p><b>index</b></p>
+<p>The property represents the zero-based index of the match in the string</p></td>
+</tr>
+<tr>
+<td class="ts">3</td>
+<td><p><b>input</b></p>
+<p>This property is only present in arrays created by regular expression matches.</p></td>
+</tr>
+<tr>
+<td class="ts">4</td>
+<td>length
+<p>Reflects the number of elements in an array.</p></td>
+</tr>
+<tr>
+<td class="ts">5</td>
+<td>prototype
+<p>The prototype property allows you to add properties and methods to an object.</p></td>
+</tr>
+</table>
+
+                    </div>
+                </div>
+                <div>
+                  <h4>Array Method</h4>
+                  <p>Here is a list of the methods of the Array object along with their description</p>
+
+                  <div class="Table">
+                    <table class="table table-bordered">
+<tr>
+<th style="text-align:center;">Sr.No.</th>
+<th style="text-align:center;">Method &amp; Description</th>
+</tr>
+<tr>
+<td class="ts">1</td>
+<td>concat()
+<p>Returns a new array comprised of this array joined with other array(s) and/or value(s).</p></td>
+</tr>
+<tr>
+<td class="ts">2</td>
+<td>every()
+<p>Returns true if every element in this array satisfies the provided testing function.</p></td>
+</tr>
+<tr>
+<td class="ts">3</td>
+<td>filter()
+<p>Creates a new array with all of the elements of this array for which the provided filtering function returns true.</p></td>
+</tr>
+<tr>
+<td class="ts">4</td>
+<td>forEach()
+<p>Calls a function for each element in the array.</p></td>
+</tr>
+<tr>
+<td class="ts">5</td>
+<td>indexOf()
+<p>Returns the first (least) index of an element within the array equal to the specified value, or -1 if none is found.</p></td>
+</tr>
+<tr>
+<td class="ts">6</td>
+<td>join()
+<p>Joins all elements of an array into a string.</p></td>
+</tr>
+<tr>
+<td class="ts">7</td>
+<td>lastIndexOf()
+<p>Returns the last (greatest) index of an element within the array equal to the specified value, or -1 if none is found.</p></td>
+</tr>
+<tr>
+<td class="ts">8</td>
+<td>map()
+<p>Creates a new array with the results of calling a provided function on every element in this array.</p></td>
+</tr>
+<tr>
+<td class="ts">9</td>
+<td>pop()
+<p>Removes the last element from an array and returns that element.</p></td>
+</tr>
+<tr>
+<td class="ts">10</td>
+<td>push()
+<p>Adds one or more elements to the end of an array and returns the new length of the array.</p></td>
+</tr>
+<tr>
+<td class="ts">11</td>
+<td>reduce()
+<p>Apply a function simultaneously against two values of the array (from left-to-right) as to reduce it to a single value.</p></td>
+</tr>
+<tr>
+<td class="ts">12</td>
+<td>reduceRight()
+<p>Apply a function simultaneously against two values of the array (from right-to-left) as to reduce it to a single value.</p></td>
+</tr>
+<tr>
+<td class="ts">13</td>
+<td>reverse()
+<p>Reverses the order of the elements of an array -- the first becomes the last, and the last becomes the first.</p></td>
+</tr>
+<tr>
+<td class="ts">14</td>
+<td>shift()
+<p>Removes the first element from an array and returns that element.</p></td>
+</tr>
+<tr>
+<td class="ts">15</td>
+<td>slice()
+<p>Extracts a section of an array and returns a new array.</p></td>
+</tr>
+<tr>
+<td class="ts">16</td>
+<td>some()
+<p>Returns true if at least one element in this array satisfies the provided testing function.</p></td>
+</tr>
+<tr>
+<td class="ts">17</td>
+<td>toSource()
+<p>Represents the source code of an object</p></td>
+</tr>
+<tr>
+<td class="ts">18</td>
+<td>sort()
+<p>Sorts the elements of an array</p></td>
+</tr>
+<tr>
+<td class="ts">19</td>
+<td>splice()
+<p>Adds and/or removes elements from an array.</p></td>
+</tr>
+<tr>
+<td class="ts">20</td>
+<td>toString()
+<p>Returns a string representing the array and its elements.</p></td>
+</tr>
+<tr>
+<td class="ts">21</td>
+<td>unshift()
+<p>Adds one or more elements to the front of an array and returns the new length of the array.</p></td>
+</tr>
+</table>
+
+                  </div>
+                </div>
+
+              </div>
+
+
+
+            </div>
+            <div id="D_M_R">
+              <h2>Date,Math,Random</h2>
+              <div class="Date">
+                <h3>Date</h3>
+                <div>
+               <p>The Date object is a datatype built into the JavaScript language. Date objects are created with the new Date( ) as shown below.</p>
+                <p>Once a Date object is created, a number of methods allow you to operate on it. Most methods simply allow you to get and set the year, month, day, hour, minute, second, and millisecond fields of the object, using either local time or UTC (universal, or GMT) time.</p>
+                <br>
+                <h4>Syntax</h4>
+                <p>You can use any of the following syntaxes to create a Date object using Date() constructor.</p>
+                <ul>
+                  <li><span class="monospace">new Date( )</span></li>
+                  <li><span class="monospace">new Date(milliseconds)</span></li>
+                  <li><span class="monospace">new Date(datestring)</span></li>
+                  <li><span class="monospace">new Date(year,month,date[,hour,minute,second,millisecond ])</span></li>
+                </ul>
+                <br>
+                <p>Note − Parameters in the brackets are always optional</p>
+                </div>
+                <div>
+                  <h4>Date Properties</h4>
+                  <p>Here is a list of the properties of the Date object along with their description.</p>
+
+                  <div class="Table">
+                    <table class="table table-bordered">
+                    <tr>
+                    <th style="text-align:center;">  Sr.No.</th>
+                    <th style="text-align:center;">Property &amp; Description</th>
+                    </tr>
+                    <tr>
+                    <td class="ts">1</td>
+                    <td>constructor
+                    <p>Specifies the function that creates an object's prototype.</p></td>
+                    </tr>
+                    <tr>
+                    <td class="ts">2</td>
+                    <td>prototype
+                    <p>The prototype property allows you to add properties and methods to an object</p></td>
+                    </tr>
+                    </table>
+
+                  </div>
+                </div>
+                <div>
+                    <h4>Date Static Methods</h4>
+                    <p>In addition to the many instance methods listed previously, the Date object also defines two static methods. These methods are invoked through the Date() constructor itself.</p>
+
+                    <div class="Table">
+                      <table border = 1>
+<tr>
+<th style="text-align:center;">Sr.No.</th>
+<th style="text-align:center;">Method &amp; Description</th>
+</tr>
+<tr>
+<td class="ts">1</td>
+<td>Date.parse( )
+<p>Parses a string representation of a date and time and returns the internal millisecond representation of that date.</p></td>
+</tr>
+<tr>
+<td class="ts">2</td>
+<td>Date.UTC( )
+<p>Returns the millisecond representation of the specified UTC date and time.</p></td>
+</tr>
+</table>
+
+                    </div>
+               </div>
+              </div>
+              <div class="Math">
+                <h3>Math</h3>
+                <div>
+                  <p>The math object provides you properties and methods for mathematical constants and functions. Unlike other global objects, Math is not a constructor. All the properties and methods of Math are static and can be called by using Math as an object without creating it.</p>
+                  <p>Thus, you refer to the constant pi as Math.PI and you call the sine function as Math.sin(x), where x is the method's argument.</p>
+                  <br>
+                  <h4>Syntax</h4>
+                  <p>The syntax to call the properties and methods of Math are as follows</p>
+                  <span class="monospace">var pi_val = Math.PI;</span><br>
+                  <span class="monospace">var sine_val = Math.sin(30);</span>
+
+
+                </div>
+                <div>
+                  <h4>Math Properties</h4>
+                  <p>Here is a list of all the properties of Math and their description.</p>
+
+
+                  <div class="Table">
+                    <table class="table table-bordered">
+<tr>
+<th style="text-align:center;">Sr.No.</th>
+<th style="text-align:center;">Property &amp; Description</th>
+</tr>
+<tr>
+<td class="ts">1</td>
+<td>E \
+<p>Euler's constant and the base of natural logarithms, approximately 2.718.</p></td>
+</tr>
+<tr>
+<td class="ts">2</td>
+<td>LN2
+<p>Natural logarithm of 2, approximately 0.693.</p></td>
+</tr>
+<tr>
+<td class="ts">3</td>
+<td>LN10
+<p>Natural logarithm of 10, approximately 2.302.</p></td>
+</tr>
+<tr>
+<td class="ts">4</td>
+<td>LOG2E
+<p>Base 2 logarithm of E, approximately 1.442.</p></td>
+</tr>
+<tr>
+<td class="ts">5</td>
+<td>LOG10E
+<p>Base 10 logarithm of E, approximately 0.434.</p></td>
+</tr>
+<tr>
+<td class="ts">6</td>
+<td>PI
+<p>Ratio of the circumference of a circle to its diameter, approximately 3.14159.</p></td>
+</tr>
+<tr>
+<td class="ts">7</td>
+<td>SQRT1_2
+<p>Square root of 1/2; equivalently, 1 over the square root of 2, approximately 0.707.</p></td>
+</tr>
+<tr>
+<td class="ts">8</td>
+<td>SQRT2
+<p>Square root of 2, approximately 1.414.</p></td>
+</tr>
+</table>
+
+                  </div>
+                </div>
+                <div>
+                  <h4>Maths Methods</h4>
+                  <p>Here is a list of the methods associated with Math object and their description</p>
+
+
+                    <div class="Table">
+                      <table class="table table-bordered">
+<tr>
+<th style="text-align:center;">Sr.No.</th>
+<th style="text-align:center;">Method &amp; Description</th>
+</tr>
+<tr>
+<td class="ts">1</td>
+<td>abs()
+<p>Returns the absolute value of a number.</p></td>
+</tr>
+<tr>
+<td class="ts">2</td>
+<td>acos()
+<p>Returns the arccosine (in radians) of a number.</p></td>
+</tr>
+<tr>
+<td class="ts">3</td>
+<td>asin()
+<p>Returns the arcsine (in radians) of a number.</p></td>
+</tr>
+<tr>
+<td class="ts">4</td>
+<td>atan()</a>
+<p>Returns the arctangent (in radians) of a number.</p></td>
+</tr>
+<tr>
+<td class="ts">5</td>
+<td>atan2()
+<p>Returns the arctangent of the quotient of its arguments.</p></td>
+</tr>
+<tr>
+<td class="ts">6</td>
+<td>ceil()
+<p>Returns the smallest integer greater than or equal to a number.</p></td>
+</tr>
+<tr>
+<td class="ts">7</td>
+<td>cos()
+<p>Returns the cosine of a number.</p></td>
+</tr>
+<tr>
+<td class="ts">8</td>
+<td>exp()
+<p>Returns E<sup>N</sup>, where N is the argument, and E is Euler's constant, the base of the natural logarithm.</p></td>
+</tr>
+<tr>
+<td class="ts">9</td>
+<td>floor()
+<p>Returns the largest integer less than or equal to a number.</p></td>
+</tr>
+<tr>
+<td class="ts">10</td>
+<td>log()
+<p>Returns the natural logarithm (base E) of a number.</p></td>
+</tr>
+<tr>
+<td class="ts">11</td>
+<td>max()</a>
+<p>Returns the largest of zero or more numbers.</p></td>
+</tr>
+<tr>
+<td class="ts">12</td>
+<td>min()
+<p>Returns the smallest of zero or more numbers.</p></td>
+</tr>
+<tr>
+<td class="ts">13</td>
+<td>pow()
+<p>Returns base to the exponent power, that is, base exponent.</p></td>
+</tr>
+<tr>
+<td class="ts">14</td>
+<td>random()
+<p>Returns a pseudo-random number between 0 and 1.</p></td>
+</tr>
+<tr>
+<td class="ts">15</td>
+<td>round()
+<p>Returns the value of a number rounded to the nearest integer.</p></td>
+</tr>
+<tr>
+<td class="ts">16</td>
+<td>sin()
+<p>Returns the sine of a number.</p></td>
+</tr>
+<tr>
+<td class="ts">17</td>
+<td>sqrt()
+<p>Returns the square root of a number.</p></td>
+</tr>
+<tr>
+<td class="ts">18</td>
+<td>tan()
+<p>Returns the tangent of a number.</p></td>
+</tr>
+<tr>
+<td class="ts">19</td>
+<td>toSource()
+<p>Returns the string "Math".</p></td>
+</tr>
+</table>
+
+                    </div>
+                </div>
+
+
+              </div>
+              <div class="Random">
+                <h4>Random</h4>
+                <div>
+                  <h5>Math.random()</h5>
+                  <p><span class="monospace">Math.random()</span> returns a random number between 0 (inclusive),  and 1 (exclusive):</p>
+                  <div class="examples">
+                    <h3>Example</h3>
+                    <div class="code">
+                    Math.random();
+
+                    </div>
+
+                  </div>
+
+                </div>
+                <div>
+                  <h4>JavaScript Random Integers</h4>
+                  <p><span class="monospace">Math.random() </span></span>used with<span class="monospace"> Math.floor() </span>can be used to return random integers.</p>
+                  <div class="examples">
+                    <h3>Example</h3>
+                    <div class="code">
+                    Math.floor(Math.random() * 10); &nbsp;&nbsp;// returns a random integer from 0 to 9 <br>
+                    Math.floor(Math.random() * 10);&nbsp;&nbsp;// returns a random integer from 0 to 10
+
+                    </div>
+
+                  </div>
+
+                </div>
+                <div>
+                  <h4>A Proper Random Function</h4>
+                  <p>As you can see from the examples above, it might be a good idea to create a proper random function to use for all random integer purposes.</p>
+                  <p>This JavaScript function always returns a random number between min (included) and max (excluded):</p>
+                  <div class="examples">
+                    <h3>Example</h3>
+                    <div class="code">
+                      &nbsp;&nbsp;function getRndInteger(min, max) {<br>
+    &nbsp;&nbsp;return Math.floor(Math.random() * (max - min) ) + min;<br>
+  &nbsp;&nbsp;}<br>
+
+                    </div>
+
+                  </div>
+                  <p>This JavaScript function always returns a random number between min and max (both included):</p>
+                  <div class="examples">
+                    <h3>Example</h3>
+                    <div class="code">
+                      &nbsp;&nbsp;function getRndInteger(min, max) {<br>
+    &nbsp;&nbspreturn Math.floor(Math.random() * (max - min + 1) ) + min;<br>
+  &nbsp;&nbsp;}<br>
+
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <div id="Loops">
+                <h2>Loops</h2>
+                <div>
+                  <h3> if...else Statement</h3>
+                  <div>
+                    <p>While writing a program, there may be a situation when you need to adopt one out of a given set of paths. In such cases, you need to use conditional statements that allow your program to make correct decisions and perform right actions.</p>
+                    <p>JavaScript supports conditional statements which are used to perform different actions based on different conditions. Here we will explain the if..else statement.</p>
+                      <br>
+                      <p>JavaScript supports the following forms of if..else statement −</p>
+                      <ul>
+                        <li>if statement</li>
+                        <li>if...else statement</li>
+                        <li>if...else if... statement.</li>
+                      </ul>
+                  </div>
+                  <div>
+                    <h4>if statement</h4>
+                    <p>The if statement is the fundamental control statement that allows JavaScript to make decisions and execute statements conditionally.</p>
+                    <h5>Syntax</h5>
+                    <p><span class="monospace">if (expression) {</span></p>
+                      <p><span class="monospace">Statement(s) to be executed if expression is true</span></p>
+                      <p><span class="monospace">}</span></p><br>
+                      <div class="examples">
+                        <h3>Example</h3>
+                        <div class="code">
+                          &lt;html><br>
+       &nbsp;&nbsp;&lt;body> <br>
+          &nbsp;&nbsp;&lt;script type = "text/javascript"><br>
+             &nbsp;&nbsp;&lt;!--<br>
+                &nbsp;&nbsp;var age = 20;<br>
+
+                &nbsp;&nbsp;if( age > 18 ) {<br>
+                   &nbsp;&nbsp;document.write("<b>Qualifies for driving</b>");<br>
+                &nbsp;&nbsp;}<br>
+             &nbsp;&nbsp;//--><br>
+          &nbsp;&nbsp;&lt;/script>   <br>
+          &nbsp;&nbsp;&lt;p>Set the variable to different value and then try...&lt;/p><br>
+       &nbsp;&nbsp;&lt;/body><br>
+    &nbsp;&nbsp;&lt;/html><br>
+
+
+                        </div>
+
+                      </div>
+
+                  </div>
+                  <div>
+                    <h4>if...else statement</h4>
+                    <p>The 'if...else' statement is the next form of control statement that allows JavaScript to execute statements in a more controlled way.</p>
+                    <h5>Syntax</h5>
+                    <p><span class="monospace">if (expression) {</span></p>
+                      <p><span class="monospace">Statement(s) to be executed if expression is true
+</p>
+<p><span class="monospace">} else {</span></p>
+  <p><span class="monospace">Statement(s) to be executed if expression is false</span></p>
+  <p><span class="monospace">}</span></p><br>
+  <p>Here JavaScript expression is evaluated. If the resulting value is true, the given statement(s) in the ‘if’ block, are executed. If the expression is false, then the given statement(s) in the else block are executed.</p>
+
+                <div class="examples">
+                  <h3>Examples</h3>
+                  <div class="code">
+                    &lt;html><br>
+   &nbsp;&nbsp;&lt;body>  <br>
+      &nbsp;&nbsp;&lt;script type = "text/javascript"><br>
+         &nbsp;&nbsp;&lt;!--<br>
+          &nbsp;&nbsp;var age = 15;<br>
+
+            &nbsp;&nbsp;if( age > 18 ) {<br>
+               &nbsp;&nbsp;document.write("&lt;b>Qualifies for driving&lt;/b>");<br>
+            &nbsp;&nbsp;} else {<br>
+              &nbsp;&nbsp; document.write("&lt;b>Does not qualify for driving&lt;/b>");<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+         &nbsp;&nbsp;//--><br>
+      &nbsp;&nbsp;&lt;/script>    <br>
+      &nbsp;&nbsp;&lt;p>Set the variable to different value and then try...&lt;/p><br>
+   &nbsp;&nbsp;&lt;/body><br>
+&nbsp;&nbsp;&lt;/html><br>
+
+
+                  </div>
+
+                </div>
+                  </div>
+                  <div>
+                  <h4>if...else if... statement</h4>
+                  <p>The if...else if... statement is an advanced form of if…else that allows JavaScript to make a correct decision out of several conditions.</p><br>
+                  <h5>Syntax</h5>
+                  <p><span class="monospace">if (expression 1) {</span></p>
+                    <p><span class="monospace">Statement(s) to be executed if expression 1 is true</span></p>
+                    <p><span class="monospace">} else if (expression 2) {</span>
+</p>
+<p><span class="monospace">Statement(s) to be executed if expression 2 is true</span></p>
+<p><span class="monospace">} else if (expression 3) {</span></p>
+  <p> <span class="monospace">Statement(s) to be executed if expression 3 is true</span></p>
+  <p><span class="monospace">} else {</span></p>
+    <p><span class="monospace">Statement(s) to be executed if no expression is true</span>
+</p>
+<p><span class="monospace">}</span></p>
+<p>There is nothing special about this code. It is just a series of if statements, where each if is a part of the else clause of the previous statement. Statement(s) are executed based on the true condition, if none of the conditions is true, then the else block is executed.</p>
+            <div class="examples">
+              <h3>Examples</h3>
+              <div class="code">
+                &lt;html><br>
+   &nbsp;&nbsp;&lt;body>   <br>
+      &nbsp;&nbsp;&lt;script type = "text/javascript"><br>
+         &nbsp;&nbsp;&lt;!--<br>
+            &nbsp;&nbsp;var book = "maths";<br>
+            &nbsp;&nbsp;if( book == "history" ) {<br>
+              &nbsp;&nbsp; document.write("&lt;b>History Book&lt;/b>");<br>
+            &nbsp;&nbsp;} else if( book == "maths" ) {<br>
+               &nbsp;&nbsp;document.write("&lt;b>Maths Book&lt;/b>");<br>
+            &nbsp;&nbsp;} else if( book == "economics" ) {<br>
+              &nbsp;&nbsp; document.write("&lt;b>Economics Book&lt;/b>");<br>
+            &nbsp;&nbsp;} else {<br>
+              &nbsp;&nbsp; document.write("&lt;b>Unknown Book&lt;/b>");<br>
+          &nbsp;&nbsp;  }<br>
+         &nbsp;&nbsp;//--><br>
+      &nbsp;&nbsp;&lt;/script><br>
+      &nbsp;&nbsp;&lt;p>Set the variable to different value and then try...&lt;/p><br>
+   &nbsp;&nbsp;&lt;/body><br>
+&lt;html><br>
+
+
+              </div>
+
+            </div>
+
+                  </div>
+
+                </div>
+                <div>
+                  <h3>Switch Case</h3>
+                  <div>
+                    <p>You can use multiple if...else…if statements, as in the previous chapter, to perform a multiway branch. However, this is not always the best solution, especially when all of the branches depend on the value of a single variable.</p>
+                    <p>Starting with JavaScript 1.2, you can use a switch statement which handles exactly this situation, and it does so more efficiently than repeated if...else if statements.</p>
+                    <br>
+                    <h4>Syntax</h4>
+                    <p><span class="monospace">switch (expression) {</span></p>
+                      <p><span class="monospace">case condition 1: statement(s)</span></p>
+                      <p><span class="monospace">break;</span></p>
+                      <p><span class="monospace">case condition 2: statement(s)</span></p>
+                      <p><span class="monospace">break;</span></p>
+                      <p><span class="monospace">...</span></p>
+                      <p><span class="monospace">case condition n: statement(s)</span></p>
+                      <p> <span class="monospace">break;</span></p>
+                      <p><span class="monospace">default: statement(s</span>)</p>
+                      <p><span class="monospace">}</span></p><br>
+                      <div class="examples">
+                        <h3>Example</h3>
+                        <div class="code">
+                          &lt;html>
+     &nbsp;&nbsp;&lt;body>  <br>
+        &nbsp;&nbsp;&lt;script type = "text/javascript"><br>
+           &nbsp;&nbsp;&lt;!--<br>
+              &nbsp;&nbsp;var grade = 'A';<br>
+              &nbsp;&nbsp;document.write("Entering switch block&lt;br />");<br>
+              &nbsp;&nbsp;switch (grade) {<br>
+                 &nbsp;&nbsp;case 'A': document.write("Good job&lt;br />");<br>
+                 &nbsp;&nbsp;break;<br>
+
+                 &nbsp;&nbsp;case 'B': document.write("Pretty good&lt;br />");<br>
+                 &nbsp;&nbsp;break;<br>
+
+                 &nbsp;&nbsp;case 'C': document.write("Passed&lt;br />");<br>
+                 &nbsp;&nbsp;break;<br>
+
+                 &nbsp;&nbsp;case 'D': document.write("Not so good&lt;br />");<br>
+                 &nbsp;&nbsp;break;<br>
+
+                 &nbsp;&nbsp;case 'F': document.write("Failed&lt;br />");<br>
+                 &nbsp;&nbsp;break;<br>
+
+                 &nbsp;&nbsp;default:  document.write("Unknown grade&lt;br />")<br>
+              &nbsp;&nbsp;}<br>
+              &nbsp;&nbsp;document.write("Exiting switch block");<br>
+           &nbsp;&nbsp;//--><br>
+        &nbsp;&nbsp;&lt;/script> <br>
+        &nbsp;&nbsp;&lt;p>Set the variable to different value and then try...&lt;/p><br>
+     &nbsp;&nbsp;&lt;/body><br>
+  &lt;/html><br>
+
+
+                        </div>
+
+                      </div>
+
+                  </div>
+
+                </div>
+                <div>
+                  <h3>While Loops</h3>
+                  <p>While writing a program, you may encounter a situation where you need to perform an action over and over again. In such situations, you would need to write loop statements to reduce the number of lines.</p>
+                  <p>JavaScript supports all the necessary loops to ease down the pressure of programming</p>
+
+                  <div>
+                    <h4>The while Loop</h4>
+                    <p>The most basic loop in JavaScript is the while loop which would be discussed in this chapter. The purpose of a while loop is to execute a statement or code block repeatedly as long as an expression is true. Once the expression becomes false, the loop terminates.</p>
+                    <h5>Syntax</h5>
+                    <div >
+
+                      <span class="monospace">while (expression) {</span><br>
+                        <span class="monospace">Statement(s) to be executed if expression is true</span><br>
+                        <span class="monospace">}</span>
+
+                    </div>
+                      <div class="examples">
+                        <h3>Example</h3>
+                        <div class="code">
+                          &lt;html><br>
+     &nbsp;&nbsp;&lt;body><br>
+
+        &nbsp;&nbsp;&lt;script type = "text/javascript"><br>
+           &nbsp;&nbsp;&lt;!--<br>
+              &nbsp;&nbsp;var count = 0;<br>
+              &nbsp;&nbsp;document.write("Starting Loop ");<br>
+
+              &nbsp;&nbsp;while (count < 10) {<br>
+                 &nbsp;&nbsp;document.write("Current Count : " + count + "&lt;br />");<br>
+                 &nbsp;&nbsp;count++;<br>
+              &nbsp;&nbsp;}<br>
+
+           &nbsp;&nbsp;//-->
+           &nbsp;&nbsp;document.write("Loop stopped!");<br>
+        &nbsp;&nbsp;&lt;/script><br>
+
+        &nbsp;&nbsp;&lt;p>Set the variable to different value and then try...&lt;/p><br>
+     &nbsp;&nbsp;&lt;/body><br>
+  &lt;/html><br>
+
+
+
+                        </div>
+
+                      </div>
+
+                  </div>
+                  <div>
+                    <h4>The do...while Loop</h4>
+                    <p>The do...while loop is similar to the while loop except that the condition check happens at the end of the loop. This means that the loop will always be executed at least once, even if the condition is false.</p>
+                    <h5>Syntax</h5>
+                    <span class="monospace">do {</span><br>
+                      <span class="monospace">Statement(s) to be executed;</span><br>
+                      <span class="monospace">} while (expression);</span>
+                      <div class="examples">
+                        <h3>Example</h3>
+                        <div class="code">
+                          &lt;html><br>
+   &nbsp;&nbsp;&lt;body>   <br>
+      &nbsp;&nbsp;&lt;script type = "text/javascript"><br>
+         &nbsp;&nbsp;&lt;!--<br>
+            &nbsp;&nbsp;var count = 0;<br>
+
+            &nbsp;&nbsp;document.write("Starting Loop" + "&lt;br />");<br>
+            &nbsp;&nbsp;do {<br>
+               &nbsp;&nbsp;document.write("Current Count : " + count + "&lt;br />");<br>
+               &nbsp;&nbsp;count++;<br>
+            &nbsp;&nbsp;}<br>
+
+            &nbsp;&nbsp;while (count < 5);<br>
+            &nbsp;&nbsp;document.write ("Loop stopped!");<br>
+         &nbsp;&nbsp;//--><br>
+      &nbsp;&nbsp;&lt;/script> <br>
+      &nbsp;&nbsp;&lt;p>Set the variable to different value and then try...&lt;/p><br>
+   &nbsp;&nbsp;&lt;/body><br>
+&lt;/html><br>
+
+
+                        </div>
+
+                      </div>
+
+                  </div>
+
+                </div>
+                <div>
+                  <h3>For Loop</h3>
+                  <p>The 'for' loop is the most compact form of looping. It includes the following three important parts −</p>
+                  <ul>
+                    <li>The loop initialization where we initialize our counter to a starting value. The initialization statement is executed before the loop begins.</li>
+                    <li>The test statement which will test if a given condition is true or not. If the condition is true, then the code given inside the loop will be executed, otherwise the control will come out of the loop.</li>
+                    <li>The iteration statement where you can increase or decrease your counter.</li>
+                  </ul>
+                <p>You can put all the three parts in a single line separated by semicolons.</p>
+                 <h4>Syntax</h4>
+                 <span class="monospace">for (initialization; test condition; iteration statement) {</span><br>
+                   <span class="monospace">Statement(s) to be executed if test condition is true</span><br>
+                   <span class="monospace">}</span>
+                   <div class="examples">
+                     <h3>Example</h3>
+                     <div class="code">
+                       &lt;html><br>
+   &nbsp;&nbsp;&lt;body><br>
+      &nbsp;&nbsp;&lt;script type = "text/javascript"><br>
+         &nbsp;&nbsp;&lt;!--<br>
+            &nbsp;&nbsp;var count;<br>
+            &nbsp;&nbsp;document.write("Starting Loop" + "&lt;br />");<br>
+
+            &nbsp;&nbsp;for(count = 0; count < 10; count++) {<br>
+               &nbsp;&nbsp;document.write("Current Count : " + count );<br>
+               &nbsp;&nbsp;document.write("&lt;br />");<br>
+            &nbsp;&nbsp;}         <br>
+            &nbsp;&nbsp;document.write("Loop stopped!");<br>
+         &nbsp;&nbsp;//--><br>
+      &nbsp;&nbsp;&lt;/script><br>
+      &nbsp;&nbsp;&lt;p>Set the variable to different value and then try...&lt;/p><br>
+   &nbsp;&nbsp;&lt;/body><br>
+&lt;/html><br>
+
+
+                     </div>
+
+                   </div>
+
+                </div>
+                </div>
+                <div id="RegExp">
+                  <div>
+                    <h2>RegExp</h2>
+                    <div>
+                      <p>A regular expression is an object that describes a pattern of characters.
+The JavaScript RegExp class represents regular expressions, and both String and RegExp define methods that use regular expressions to perform powerful pattern-matching and search-and-replace functions on text.
+</p>
+                <h3>syntax</h3>
+                <span class="monospace">var pattern = new RegExp(pattern, attributes);</span>
+                <p>or simply</p>
+                <span class="monospace">var pattern = /pattern/attributes;
+                </span><br>
+                <p>Here is the description of the parameters −</p>
+                <ul>
+                  <li>pattern − A string that specifies the pattern of the regular expression or another regular expression.</li>
+                  <li>attributes − An optional string containing any of the "g", "i", and "m" attributes that specify global, case-insensitive, and multi-line matches, respectively.</li>
+                </ul>
+
+                    </div>
+                    <div>
+                      <h3>Brackets</h3>
+                      <p>Brackets ([]) have a special meaning when used in the context of regular expressions. They are used to find a range of characters.</p>
+                      <!-- table banega -->
+                      <div class="Table">
+                        <table class="table table-bordered">
+<tr>
+<th style="text-align:center;">Sr.No.</th>
+<th style="text-align:center;">Expression &amp; Description</th>
+</tr>
+<tr>
+<td class="ts">1</td>
+<td><p><b>[...]</b></p>
+<p>Any one character between the brackets.</p></td>
+</tr>
+<tr>
+<td class="ts">2</td>
+<td><p><b>[^...]</b></p>
+<p>Any one character not between the brackets.</p></td>
+</tr>
+<tr>
+<td class="ts">3</td>
+<td><p><b>[0-9]</b></p>
+<p>It matches any decimal digit from 0 through 9.</p></td>
+</tr>
+<tr>
+<td class="ts">4</td>
+<td><p><b>[a-z]</b></p>
+<p>It matches any character from lowercase <b>a </b>through lowercase <b>z</b>.</p></td>
+</tr>
+<tr>
+<td class="ts">5</td>
+<td><p><b>[A-Z]</b></p>
+<p>It matches any character from uppercase <b>A</b> through uppercase <b>Z</b>.</p></td>
+</tr>
+<tr>
+<td class="ts">6</td>
+<td><p><b>[a-Z]</b></p>
+<p>It matches any character from lowercase <b>a</b> through uppercase <b>Z</b>.</p></td>
+</tr>
+</table>
+
+                      </div>
+
+                    </div>
+                    <div>
+                      <h3>Quantifiers</h3>
+                      <p>The frequency or position of bracketed character sequences and single characters can be denoted by a special character. Each special character has a specific connotation. The +, *, ?, and $ flags all follow a character sequence.</p>
+
+
+                      <div class="Table">
+                        <table class="table table-bordered">
+<tr>
+<th style="text-align:center;">Sr.No.</th>
+<th style="text-align:center;">Expression &amp; Description</th>
+</tr>
+<tr>
+<td class="ts">1</td>
+<td><p><b>p+</b></p>
+<p>It matches any string containing one or more p's.</p></td>
+</tr>
+<tr>
+<td class="ts">2</td>
+<td><p><b>p*</b></p>
+<p>It matches any string containing zero or more p's.</p></td>
+</tr>
+<tr>
+<td class="ts">3</td>
+<td><p><b>p?</b></p>
+<p>It matches any string containing at most one p.</p></td>
+</tr>
+<tr>
+<td class="ts">4</td>
+<td><p><b>p{N}</b></p>
+<p>It matches any string containing a sequence of <b>N</b> p's</p></td>
+</tr>
+<tr>
+<td class="ts">5</td>
+<td><p><b>p{2,3}</b></p>
+<p>It matches any string containing a sequence of two or three p's.</p></td>
+</tr>
+<tr>
+<td class="ts">6</td>
+<td><p><b>p{2, }</b></p>
+<p>It matches any string containing a sequence of at least two p's.</p></td>
+</tr>
+<tr>
+<td class="ts">7</td>
+<td><p><b>p$</b></p>
+<p>It  matches any string with p at the end of it.</p></td>
+</tr>
+<tr>
+<td class="ts">8</td>
+<td><p><b>^p</b></p>
+<p>It matches any string with p at the beginning of it.</p></td>
+</tr>
+</table>
+
+                      </div>
+                    </div>
+                    <div>
+                      <h4>Examples</h4>
+                      <!-- table banega -->
+                      <div class="Table">
+                        <table class="table table-bordered">
+<tr>
+<th style="text-align:center;">Sr.No.</th>
+<th style="text-align:center;">Expression &amp; Description</th>
+</tr>
+<tr>
+<td class="ts">1</td>
+<td><p><b>[^a-zA-Z]</b></p>
+<p>It matches any string not containing any of the characters ranging from <b>a</b> through <b>z</b> and <b>A</b> through Z.</p></td>
+</tr>
+<tr>
+<td class="ts">2</td>
+<td><p><b>p.p</b></p>
+<p>It matches any string containing <b>p,</b> followed by any character, in turn followed by another <b>p</b>.</p></td>
+</tr>
+<tr>
+<td class="ts">3</td>
+<td><p><b>^.{2}$</b></p>
+<p>It matches any string containing exactly two characters.</p></td>
+</tr>
+<tr>
+<td class="ts">4</td>
+<td><p><b>&lt;b&gt;(.*)&lt;/b&gt;</b></p>
+<p>It matches any string enclosed within &lt;b&gt; and &lt;/b&gt;.</p></td>
+</tr>
+<tr>
+<td class="ts">5</td>
+<td><p><b>p(hp)*</b></p>
+<p>It matches any string containing a <b>p</b> followed by zero or more instances of the sequence <b>hp</b>.</p></td>
+</tr>
+</table>
+
+                      </div>
+                    </div>
+                    <div>
+                      <h3>Literal characters</h3>
+
+                      <div class="Table">
+                        <table class="table table-bordered">
+<tr>
+<th style="text-align:center;">Sr.No.</th>
+<th style="text-align:center;">Character &amp; Description</th>
+</tr>
+<tr>
+<td class="ts">1</td>
+<td><p><b>Alphanumeric</b></p>
+<p>Itself</p></td>
+</tr>
+<tr>
+<td class="ts">2</td>
+<td><p><b>\0</b></p>
+<p>The NUL character (\u0000)</p></td>
+</tr>
+<tr>
+<td class="ts">3</td>
+<td><p><b>\t</b></p>
+<p>Tab (\u0009</p></td>
+</tr>
+<tr>
+<td class="ts">4</td>
+<td><p><b>\n</b></p>
+<p>Newline (\u000A)</p></td>
+</tr>
+<tr>
+<td class="ts">5</td>
+<td><p><b>\v</b></p>
+<p>Vertical tab (\u000B)</p></td>
+</tr>
+<tr>
+<td class="ts">6</td>
+<td><p><b>\f</b></p>
+<p>Form feed (\u000C)</p></td>
+</tr>
+<tr>
+<td class="ts">7</td>
+<td><p><b>\r</b></p>
+<p>Carriage return (\u000D)</p></td>
+</tr>
+<tr>
+<td class="ts">8</td>
+<td><p><b>\xnn</b></p>
+<p>The Latin character specified by the hexadecimal number nn; for example, \x0A is the same as \n</p></td>
+</tr>
+<tr>
+<td class="ts">9</td>
+<td><p><b>\uxxxx</b></p>
+<p>The Unicode character specified by the hexadecimal number xxxx; for example, \u0009 is the same as \t</p></td>
+</tr>
+<tr>
+<td class="ts">10</td>
+<td><p><b>\cX</b></p>
+<p>The control character ^X; for example, \cJ is equivalent to the newline character \n</p></td>
+</tr>
+</table>
+
+                      </div>
+                    </div>
+                    <div>
+                      <h3>Metacharacters</h3>
+                      <p>A metacharacter is simply an alphabetical character preceded by a backslash that acts to give the combination a special meaning.</p>
+                      <p>The following table lists a set of metacharacters which can be used in PERL Style Regular Expressions.</p>
+
+                      <div class="Table">
+                        <table class="table table-bordered">
+<tr>
+<th style="text-align:center;width:10%">Sr.No.</th>
+<th style="text-align:center;">Character &amp; Description</th>
+</tr>
+<tr>
+<td class="ts">1</td>
+<td><p><b>.</b></p>
+<p>a single character</p></td>
+</tr>
+<tr>
+<td class="ts">2</td>
+<td><p><b>\s</b></p>
+<p>a whitespace character (space, tab, newline)</p></td>
+</tr>
+<tr>
+<td class="ts">3</td>
+<td><p><b>\S</b></p>
+<p>non-whitespace character</p></td>
+</tr>
+<tr>
+<td class="ts">4</td>
+<td><p><b>\d</b></p>
+<p>a digit (0-9)</p></td>
+</tr>
+<tr>
+<td class="ts">5</td>
+<td><p><b>\D</b></p>
+<p>a non-digit</p></td>
+</tr>
+<tr>
+<td class="ts">6</td>
+<td><p><b>\w</b></p>
+<p>a word character (a-z, A-Z, 0-9, _)</p></td>
+</tr>
+<tr>
+<td class="ts">7</td>
+<td><p><b>\W</b></p>
+<p>a non-word character</p></td>
+</tr>
+<tr>
+<td class="ts">8</td>
+<td><p><b>[\b]</b></p>
+<p>a literal backspace (special case).</p></td>
+</tr>
+<tr>
+<td class="ts">9</td>
+<td><p><b>[aeiou]</b></p>
+<p>matches a single character in the given set</p></td>
+</tr>
+<tr>
+<td class="ts">10</td>
+<td><p><b>[^aeiou]</b></p>
+<p>matches a single character outside the given set</p></td>
+</tr>
+<tr>
+<td class="ts">11</td>
+<td><p><b>(foo|bar|baz)</b></p>
+<p>matches any of the alternatives specified</p></td>
+</tr>
+</table>
+
+                      </div>
+                    </div>
+                    <div>
+                      <h3>Modifiers</h3>
+                      <p>Several modifiers are available that can simplify the way you work with regexps, like case sensitivity, searching in multiple lines, etc.</p>
+                      <!-- table banega -->
+                      <div class="Table">
+                        <table class="table table-bordered">
+<tr>
+<th style="text-align:center;">Sr.No.</th>
+<th style="text-align:center;">Modifier &amp; Description</th>
+</tr>
+<tr>
+<td class="ts">1</td>
+<td><p><b>i</b></p>
+<p>Perform case-insensitive matching.</p></td>
+</tr>
+<tr>
+<td class="ts">2</td>
+<td><p><b>m</b></p>
+<p>Specifies that if the string has newline or carriage return characters, the ^ and $ operators will now match against a newline boundary, instead of a string boundary</p></td>
+</tr>
+<tr>
+<td class="ts">3</td>
+<td><p><b>g</b></p>
+<p>Performs a global matchthat is, find all matches rather than stopping after the first match.</p></td>
+</tr>
+</table>
+
+                      </div>
+                    </div>
+                    <div>
+                      <h3>RegExp Properties</h3>
+                      <p>Here is a list of the properties associated with RegExp and their description.</p>
+
+                      <div class="Table">
+                        <table  class="table table-bordered">
+<tr>
+<th style="text-align:center;">Sr.No.</th>
+<th style="text-align:center;">Property &amp; Description</th>
+</tr>
+<tr>
+<td class="ts">1</td>
+<td>constructor
+<p>Specifies the function that creates an object's prototype.</p></td>
+</tr>
+<tr>
+<td class="ts">2</td>
+<td>global
+<p>Specifies if the "g" modifier is set.</p></td>
+</tr>
+<tr>
+<td class="ts">3</td>
+<td>ignoreCase
+<p>Specifies if the "i" modifier is set.</p></td>
+</tr>
+<tr>
+<td class="ts">4</td>
+<td>lastIndex
+<p>The index at which to start the next match.</p></td>
+</tr>
+<tr>
+<td class="ts">5</td>
+<td>multiline
+<p>Specifies if the "m" modifier is set.</p></td>
+</tr>
+<tr>
+<td class="ts">6</td>
+<td>source
+<p>The text of the pattern.</p></td>
+</tr>
+</table>
+
+                      </div>
+                    </div>
+                    <div>
+                      <h3>RegExp Methods</h3>
+                      <p>Here is a list of the methods associated with RegExp along with their description.</p>
+                      
+                      <div class="Table">
+                        <table border="1" class="table table-bordered">
+<tr>
+<th style="text-align:center;">Sr.No.</th>
+<th style="text-align:center;">Method &amp; Description</th>
+</tr>
+<tr>
+<td class="ts">1</td>
+<td>exec()
+<p>Executes a search for a match in its string parameter.</p></td>
+</tr>
+<tr>
+<td class="ts">2</td>
+<td>test()
+<p>Tests for a match in its string parameter.</p></td>
+</tr>
+<tr>
+<td class="ts">3</td>
+<td>toSource()
+<p>Returns an object literal representing the specified object; you can use this value to create a new object.</p></td>
+</tr>
+<tr>
+<td class="ts">4</td>
+<td>toString()
+<p>Returns a string representing the specified object.</p></td>
+</tr>
+</table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./js/js.js"></script>
+  </body>
+</html>

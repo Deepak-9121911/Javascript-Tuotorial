@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Answers to DOM Quiz</title>
+    <link rel="icon" href="images/jscript.ico" />
+  </head>
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400&display=swap"
+    rel="stylesheet"
+  />
+  <!-- Font Awesome CDN -->
+  <script
+    src="https://kit.fontawesome.com/c0221349e7.js"
+    crossorigin="anonymous"
+  ></script>
+  <!-- custom stylesheet -->
+  <link rel="stylesheet" href="./css/js-quiz-answer.css" />
+  <body>
+    <nav class="nav-bar">
+      <ul class="nav-links">
+        <li>
+          <a href="./index.html"><i class="fas fa-home"></i>Home</a>
+        </li>
+        <li>
+          <a href="./about.html"><i class="fas fa-address-card"></i>About</a>
+        </li>
+        <li>
+          <a href="https://codepen.io/pen/" target="_blank"
+            ><i class="fab fa-codepen"></i>Codepen</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <div class="wrapper">
+      <div class="sidebar">
+        <h3>Reference for explanations</h3>
+        <ul>
+          <li>
+            <a href="./dom.html#intro">Introduction</a>
+          </li>
+          <li>
+            <a href="./dom.html#methods">DOM Methods</a>
+          </li>
+          <li>
+            <a href="./dom.html#document">DOM Documents</a>
+          </li>
+          <li>
+            <a href="./dom.html#elements">DOM Elements</a>
+          </li>
+          <li>
+            <a href="./dom.html#html">DOM HTML</a>
+          </li>
+          <li>
+            <a href="./dom.html#css">DOM CSS</a>
+          </li>
+          <li>
+            <a href="./dom.html#events">DOM Events</a>
+          </li>
+          <li>
+            <a href="./dom.html#navigation">DOM Navigation</a>
+          </li>
+          <li>
+            <a href="./dom.html#nodes">DOM Nodes</a>
+          </li>
+          <li>
+            <a href="./dom.html#nodelist">DOM Nodelist</a>
+          </li>
+        </ul>
+      </div>
+      <div class="main_content">
+        <div class="info">
+          <ol>
+            <li>
+              <p>
+                The Document Object Model (DOM) is a hierarchy that most closely
+                resembles what object?
+              </p>
+              <ol type="a">
+                <li>a tower</li>
+                <li>a spiderweb</li>
+                <li><b>a tree</b></li>
+                <li>a tournament bracket</li>
+              </ol>
+            </li>
+            <br />
+            <li>
+              <p>Every node in the DOM represents what?</p>
+              <ol type="a">
+                <li>a tower</li>
+                <li>a spiderweb</li>
+                <li>a tree</li>
+                <li><b>a tournament bracket</b></li>
+              </ol>
+            </li>
+            <br />
+            <li>
+              <p>
+                What three relationships between nodes are key to the DOM
+                hierarchy?
+              </p>
+              <ol type="a">
+                <li>Parent</li>
+                <li>Child</li>
+                <li><b>Sibling</b></li>
+                <li>Cousin</li>
+              </ol>
+            </li>
+            <br />
+            <li>
+              <p>
+                Which method selects the first matching element in the document?
+              </p>
+              <ol type="a">
+                <li>document.querySelectorAll()</li>
+                <li>document.getElementsByClass()</li>
+                <li><b>document.querySelector()</b></li>
+                <li>document.getElementsByTagName()</li>
+              </ol>
+            </li>
+            <br />
+            <li>
+              <p>
+                What can we accomplish by modifying a DOM element's innerHTML
+                attribute?
+              </p>
+              <ol type="a">
+                <li>Add child elements and content.</li>
+                <li><b>Alter text content.</b></li>
+                <li>Clear existing content.</li>
+                <li>Modify parent element content.</li>
+              </ol>
+            </li>
+            <br />
+            <li>
+              <p>What method allows us to add an attribute to a DOM element?</p>
+              <ol type="a">
+                <li>element.getAttribute()</li>
+                <li>element.createAttribute()</li>
+                <li><b>element.setAttribute()</b></li>
+                <li>element.makeAttribute()</li>
+              </ol>
+            </li>
+            <br />
+            <li>
+              <p>Which are valid CSS property names in JavaScript?</p>
+              <ol type="a">
+                <li><b>fontFamily</b></li>
+                <li>background-position</li>
+                <li>marginTop</li>
+                <li>font-weight</li>
+              </ol>
+            </li>
+            <br />
+            <li>
+              <p>Which command creates a new button?</p>
+              <ol type="a">
+                <li>let button = document.new('button');</li>
+                <li>let button = document.createElement('');</li>
+                <li><b>let button = document.createElement('button');</b></li>
+                <li>let button = document.makeElement('{button}');</li>
+              </ol>
+            </li>
+            <br />
+            <li>
+              <p>Which command adds the button we just created to the DOM</p>
+              <ol type="a">
+                <li>
+                  <b>document.body.appendChild(button);</b>
+                </li>
+                <li>document.insert(button);</li>
+                <li>window.appendChild(button);</li>
+                <li>None of the above</li>
+              </ol>
+            </li>
+            <br />
+            <li>
+              <p>
+                What prefix indicates that an HTML attribute is intended to
+                store information for computing?
+              </p>
+              <ol type="a">
+                <li>info-</li>
+                <li>db-</li>
+                <li><b>data-</b></li>
+                <li>query-</li>
+              </ol>
+            </li>
+            <br />
+          </ol>
+        </div>
+      </div>
+    </div>
+    <script src="./js/js.js"></script>
+  </body>
+</html>

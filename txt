@@ -1,0 +1,67 @@
+<h3>HTML Document Object Model</h3>
+        <ul>
+          <li>
+            <a href="#">Introduction</a>
+          </li>
+          <li>
+            <a href="#">DOM Methods</a>
+          </li>
+          <li>
+            <a href="#">DOM Documents</a>
+          </li>
+          <li>
+            <a href="#">DOM Elements</a>
+          </li>
+          <li>
+            <a href="#">DOM HTML</a>
+          </li>
+          <li>
+            <a href="#">DOM CSS</a>
+          </li>
+          <li>
+            <a href="#">DOM Events</a>
+          </li>
+          <li>
+            <a href="#">DOM Navigation</a>
+          </li>
+          <li>
+            <a href="#">DOM Nodes</a>
+          </li>
+          <li>
+            <a href="#">DOM Nodelist</a>
+          </li>
+        </ul>
+
+
+<h2>Introduction</h2>
+          <p>
+            The Document Object Model, or DOM for short, is a platform and
+            language independent model to represent the HTML or XML documents.
+            It defines the logical structure of the documents and the way in
+            which they can be accessed and manipulated by an application
+            program.
+          </p>
+          <p>
+            In the DOM, all parts of the document, such as elements, attributes,
+            text, etc. are organized in a hierarchical tree-like structure;
+            similar to a family tree in real life that consists of parents and
+            children. In DOM terminology these individual parts of the document
+            are known as nodes.
+          </p>
+
+
+
+
+
+&lt;html&gt;<br />
+              &nbsp; &lt;head&gt;<br />
+              &nbsp;&nbsp;&lt;title&gt;My Page&lt;/title&gt;<br />
+              &nbsp;&lt;/head&gt;<br />
+              &nbsp;&lt;body&gt;<br />
+              &nbsp;&nbsp;&lt;h1&gt;Mobile OS&lt;/h1&gt;<br />
+              &nbsp;&nbsp;&lt;ul&gt;<br />
+              &nbsp;&nbsp;&nbsp;&lt;li&gt;Android&lt;/li&gt;<br />
+              &nbsp;&nbsp;&nbsp;&lt;li&gt;iOS&lt;/li&gt;<br />
+              &nbsp;&nbsp;&lt;/ul&gt;<br />
+              &nbsp;&lt;/body&gt;<br />
+              &lt;/html&gt;<br />

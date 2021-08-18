@@ -1,0 +1,202 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Ubuntu", sans-serif;
+  background-color: #efefef;
+}
+#top-container {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)),
+    url("BrutalLifeCycleJavascript.png");
+  background-position: center;
+  background-size: cover;
+  color: white;
+  height: 698px;
+}
+.head-space {
+  text-align: center;
+  padding: 5%;
+}
+.f-logos {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-bottom: 3rem;
+}
+.fas,
+.fab {
+  color: #fe4066;
+  font-size: 4rem;
+  padding: 3rem 5rem;
+  text-align: center;
+}
+.fas:hover,
+.fab:hover {
+  color: #ef8172;
+}
+.jscript,
+.htmldom,
+.bom {
+  text-align: center;
+}
+.jscript a,
+.htmldom a,
+.bom a {
+  color: white;
+}
+.jscript a:hover,
+.htmldom a:hover,
+.bom a:hover {
+  text-decoration: none;
+  color: white;
+}
+.feat {
+  color: #8f8f8f;
+}
+#middle-container {
+  padding: 5% 1.5%;
+  display: flex;
+  justify-content: space-around;
+}
+.card-00,
+.card-01,
+.card-02,
+.card-03,
+.card-04 {
+  width: 17rem;
+}
+.srno-00,
+.srno-01,
+.heading-01,
+.contents-01,
+.srno-02,
+.heading-02,
+.contents-02,
+.srno-03,
+.heading-03,
+.contents-03,
+.srno-04,
+.heading-04,
+.contents-04 {
+  padding: 1rem 0;
+}
+.contents-01,
+.contents-02,
+.contents-03,
+.contents-04 {
+  border-radius: 20px;
+  color: white;
+  padding: 1.2rem;
+  font-style: italic;
+}
+.contents-01:hover,
+.contents-02:hover,
+.contents-03:hover,
+.contents-04:hover {
+  box-shadow: 5px 5px 40px #c7c7c7;
+}
+.contents-01 a,
+.contents-02 a,
+.contents-03 a,
+.contents-04 a,
+.contents-01 a:hover,
+.contents-02 a:hover,
+.contents-03 a:hover,
+.contents-04 a:hover {
+  text-decoration: none;
+  color: white;
+}
+
+.heading-01 a:hover,
+.heading-02 a:hover,
+.heading-03 a:hover {
+  text-decoration: none;
+}
+.srno-00 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #8f8f8f;
+}
+.srno-01 {
+  border-bottom: 2px solid #3399ff;
+  color: #3399ff;
+  font-size: 3rem;
+  font-weight: 700;
+}
+.heading-01,
+.heading-01 a {
+  color: #3399ff;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.contents-01 {
+  background-color: #3399ff;
+}
+.srno-02 {
+  border-bottom: 2px solid #66cc00;
+  color: #66cc00;
+  font-size: 3rem;
+  font-weight: 700;
+}
+.heading-02,
+.heading-02 a {
+  color: #66cc00;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.contents-02 {
+  background-color: #66cc00;
+}
+.srno-03 {
+  border-bottom: 2px solid skyblue;
+  color: skyblue;
+  font-size: 3rem;
+  font-weight: 700;
+}
+.heading-03,
+.heading-03 a {
+  color: skyblue;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.contents-03 {
+  background-color: skyblue;
+}
+.srno-04 {
+  border-bottom: 2px solid #ffd700;
+  color: #ffd700;
+  font-size: 3rem;
+  font-weight: 700;
+}
+.heading-04 {
+  color: #ffd700;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.contents-04 {
+  background-color: #ffd700;
+}
+
+@media screen and (max-width: 1238px) {
+  #middle-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .card-00,
+  .card-01,
+  .card-02,
+  .card-03,
+  .card-04 {
+    width: 30rem;
+  }
+  .contents-01,
+  .contents-02,
+  .contents-03,
+  .contents-04 {
+    font-size: 20px;
+    padding: 3rem;
+  }
+}
